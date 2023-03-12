@@ -1,0 +1,13 @@
+.testimonial-wrapper {
+  margin: 12px;
+  background-color: red;
+  max-width: 364px;
+  border-radius: 14px;
+}
+.testimonial-wrapper img {
+  width: 64px;
+  height: 64px;
+}
+.testimonial-wrapper .testimonial-info .rating .checked {
+  color: green;
+}/*# sourceMappingURL=testimonials.css.map */

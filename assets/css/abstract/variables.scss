@@ -1,0 +1,23 @@
+// spacings
+$base-space: .5rem; //8px
+$space-xs: $base-space; //8px
+$space-s: $base-space * 2; //16px
+$space-m: $base-space * 3; //24px
+$space-l: $base-space * 4; //32px
+$space-xl: $base-space * 7; //56px
+$space-xxl: $base-space * 8; //64px
+
+// colors
+$primary-color: #BE3144;
+$first-secondary-color: #1A2033;
+$second-secondary-color: #3B4159;
+
+// typography
+// weight
+$font-weight-regular: 400;
+$font-weight-bold: 500;
+
+// size
+$font-size-base: 1rem;
+$font-size-s: $font-size-base;
+$font-size-m: $font-size-base * 1.125;
