@@ -33,6 +33,21 @@
   color: #BE3144;
 }
 
+.stat h3,
+.stat p {
+  text-align: center;
+}
+.stat h3 {
+  line-height: 133%;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #17171F;
+}
+.stat p {
+  white-space: nowrap;
+  color: #3B4159;
+}
+
 section {
   margin: 120px 0;
 }
@@ -44,8 +59,78 @@ section h2 {
   margin-bottom: 4rem;
 }
 
+#introduction .intro {
+  font-size: 1.125rem;
+  color: #BE3144;
+}
+#introduction .intro::before {
+  content: "";
+  height: 267px;
+  width: 267px;
+  background-color: rgba(235, 85, 105, 0.13);
+  position: absolute;
+  top: -100px;
+  left: -233px;
+  border-radius: 50%;
+  filter: blur(250px);
+}
+#introduction h1 {
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 143%;
+  color: #1A2033;
+  margin-bottom: 1.5rem;
+}
+#introduction .agency-description {
+  line-height: 178%;
+  font-size: 1.125rem;
+  color: #3B4159;
+  margin-bottom: 2.5rem;
+}
+#introduction .btn-area {
+  margin-bottom: 4rem;
+}
+#introduction .btn-area .btn-primary {
+  background-color: #BE3144;
+  border-color: #BE3144;
+  margin-right: 1.25rem;
+  color: white;
+}
+#introduction .btn-area .btn-primary:hover {
+  background-color: white;
+  color: #BE3144;
+}
+#introduction .btn-area .btn-outline-dark {
+  color: #3B4159;
+  border-color: #3B4159;
+}
+#introduction .btn-area .btn-outline-dark:hover {
+  background-color: #3B4159;
+  color: white;
+}
+#introduction .stat + .stat {
+  margin-left: 4.5rem;
+}
+#introduction .illustration {
+  padding: 2rem;
+  padding-right: 0;
+}
+#introduction .illustration::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 267px;
+  width: 267px;
+  background-color: rgba(253, 126, 65, 0.28);
+  border-radius: 50%;
+  bottom: -88px;
+  right: 114px;
+  filter: blur(250px);
+}
+
 #testimonials > p {
   text-align: center;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #BE3144;
 }
