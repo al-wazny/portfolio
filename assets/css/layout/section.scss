@@ -1,0 +1,109 @@
+$blur: 250px;
+$blured-circle-height: 267px;
+$agency-desc-spacing-bottom: $base-space * 5;
+$btn-spacing-right: $base-space * 2.5;
+$stats-spacing: $base-space * 9;
+
+section {
+    margin: 120px 0;
+
+    h2 {
+        text-align: center;
+        color: $first-secondary-color;
+        font-size: 3rem;
+        font-weight: $font-weight-bolder;
+        margin-bottom: $space-xxl;
+    }
+}
+
+// TODO set break point for the blured circles (<1200px)
+#introduction {
+    .intro {
+        font-size: $font-size-m;
+        color: $primary-color;
+
+        &::before {
+            content: '';
+            height: $blured-circle-height;
+            width: $blured-circle-height;
+            background-color: rgba(235, 85, 105, 0.13);
+            position: absolute;
+            top: -100px;
+            left: -233px;
+            border-radius: 50%;
+            filter: blur($blur);
+        }
+    }
+
+    h1 {
+        font-weight: $font-weight-bolder;
+        font-size: 3.5rem;
+        line-height: 143%;
+        color: $first-secondary-color;
+        margin-bottom: $space-m;
+    }
+
+    .agency-description {
+        line-height: 178%;
+        font-size: $font-size-m;
+        color: $second-secondary-color;
+        margin-bottom: $agency-desc-spacing-bottom;
+    }
+
+    .btn-area {
+        margin-bottom: $space-xxl;
+
+        .btn-primary {
+            &:hover {
+                background-color: white;
+                color: $primary-color;
+            }
+
+            background-color: $primary-color;
+            border-color: $primary-color;
+            margin-right: $btn-spacing-right;
+            color: white;
+        }
+
+        .btn-outline-dark {
+            &:hover {
+                background-color: $second-secondary-color;
+                color: white;
+            }
+
+            color: $second-secondary-color;
+            border-color: $second-secondary-color;
+        }
+    }
+
+    .stat + .stat {
+        margin-left: $stats-spacing;
+    }
+
+    .illustration {
+        padding: $space-l;
+        padding-right: 0;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            height: $blured-circle-height;
+            width: $blured-circle-height;
+            background-color: rgba(253, 126, 65, 0.28);
+            border-radius: 50%;
+            bottom: -88px;
+            right: 114px;
+            filter: blur($blur);
+        }
+    }
+}
+
+#testimonials {
+    > p {
+        text-align: center;
+        font-size: $font-size-l;
+        margin-bottom: $space-s;
+        color: $primary-color;
+    }
+}

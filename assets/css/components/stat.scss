@@ -1,0 +1,18 @@
+.stat {
+    h3,
+    p {
+        text-align: center;
+    }
+
+    h3 {
+        line-height: 133%;
+        font-size: 3rem;
+        margin-bottom: $space-s;
+        color: #17171F;
+    }
+
+    p {
+        white-space: nowrap;
+        color: #3B4159;
+    }
+}

@@ -14,34 +14,59 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <section id="testimonials">
-            <p>Testimonials</p>
-            <h2>What Our Clients Say About Us</h2>
-            <div class="d-flex">
-                <?= testimonial(
-                    "../assets/img/placeholder-user.png",
-                    "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
-                    "Cooper, Kristin",
-                    "Amazon",
-                    4
-                ); 
-                testimonial(
-                    "../assets/img/placeholder-user.png",
-                    "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
-                    "Cooper, Kristin",
-                    "Amazon",
-                    3
-                );
-                testimonial(
-                    "../assets/img/placeholder-user.png",
-                    "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
-                    "Cooper, Kristin",
-                    "Amazon",
-                    5
-                );?>
-            </div>
-        </section>
-    </div>
+    <main>
+        <div class="container">
+            <section id="introduction">
+                <div class="row">
+                    <div class="col-6">
+                        <p class="intro">A trusted digital agency</p>
+                        <h1>Digital Product Design Agency</h1>
+                        <p class="agency-description">Octave are a web design agency, creating beautiful, fast and effective websites for new and established businesses.</p>
+                        <div class="btn-area">
+                            <a class="btn btn-primary">Our Work</a>
+                            <a class="btn btn-outline-dark">Our Services</a>
+                        </div>
+                        <div class="stats d-flex">
+                            <?= experienceStat("10+", "Years experience") ?>
+                            <?= experienceStat("96+", "Satisfied Clients") ?>
+                            <?= experienceStat("99+", "Projects Completed") ?>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="illustration">
+                            <img src="./assets/img/Website designer-amico.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="testimonials">
+                <p>Testimonials</p>
+                <h2>What Our Clients Say About Us</h2>
+                <div class="d-flex">
+                    <?= testimonial(
+                        "../assets/img/placeholder-user.png",
+                        "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
+                        "Cooper, Kristin",
+                        "Amazon",
+                        4
+                    ); 
+                    testimonial(
+                        "../assets/img/placeholder-user.png",
+                        "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
+                        "Cooper, Kristin",
+                        "Amazon",
+                        3
+                    );
+                    testimonial(
+                        "../assets/img/placeholder-user.png",
+                        "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
+                        "Cooper, Kristin",
+                        "Amazon",
+                        5
+                    );?>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
