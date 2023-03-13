@@ -1,4 +1,4 @@
-<?php function testimonial(String $testimonial, String $name, String $company, int $rating) { ?>
+<?php function testimonial(String $imgPath, String $testimonial, String $name, String $company, int $rating) { ?>
     <div class="testimonial-wrapper">
         <img class="rounded-circle" src="../../assets/img/placeholder-user.png" alt="client placeholder image">
         <p class="testimonial">

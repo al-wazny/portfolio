@@ -1,3 +1,4 @@
+<?php require_once "./view/index.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,13 +14,34 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include("./view/components/testimonials.php"); 
-    testimonial(
-        "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
-        "Cooper, Kristin",
-        "Amazon",
-        3
-    );
-    ?>
+    <div class="container">
+        <section id="testimonials">
+            <p>Testimonials</p>
+            <h2>What Our Clients Say About Us</h2>
+            <div class="d-flex">
+                <?= testimonial(
+                    "../assets/img/placeholder-user.png",
+                    "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
+                    "Cooper, Kristin",
+                    "Amazon",
+                    4
+                ); 
+                testimonial(
+                    "../assets/img/placeholder-user.png",
+                    "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
+                    "Cooper, Kristin",
+                    "Amazon",
+                    3
+                );
+                testimonial(
+                    "../assets/img/placeholder-user.png",
+                    "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
+                    "Cooper, Kristin",
+                    "Amazon",
+                    5
+                );?>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
