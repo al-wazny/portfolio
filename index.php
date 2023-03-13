@@ -13,6 +13,13 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include("./view/components/testimonials.html"); ?>
+    <?php include("./view/components/testimonials.php"); 
+    testimonial(
+        "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
+        "Cooper, Kristin",
+        "Amazon",
+        3
+    );
+    ?>
 </body>
 </html>
