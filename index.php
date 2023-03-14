@@ -41,6 +41,46 @@
                 </div>
             </div>
         </section>
+        
+        <section id="services">
+            <div class="container">
+                <div class="row">
+                    <?= service(
+                        'bluber',
+                        "Website Hosting",
+                        'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
+                    );
+                    service(
+                        "blub",
+                        'Automation',
+                        'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
+                    );
+                    service(
+                        "blub",
+                        'Graphic Design',
+                        'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
+                    ); ?>
+                </div>
+                <div class="row">
+                    <?= service(
+                        "blub",
+                        'Web development',
+                        'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
+                    ); 
+                    service(
+                        "blub",
+                        'Website Hosting',
+                        'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
+                    );
+                    service(
+                        "blub",
+                        'Graphic Design',
+                        'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
+                    ); ?>
+                </div>
+            </div>
+        </section>
+
         <section id="testimonials">
             <div class="container">
                 <p class="title">Testimonials</p>

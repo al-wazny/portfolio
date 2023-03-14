@@ -84,6 +84,12 @@ section {
     }
 }
 
+#services {
+    col-4 {
+
+    }
+}
+
 .btn {
     padding: calc($space-s - 2px) $space-m;
 }
@@ -116,6 +122,16 @@ section {
 
     color: $second-secondary-color;
     border-color: $second-secondary-color;
+}
+
+.card {
+    max-width: 364px;
+    padding: $space-m;
+    border: none !important;
+}
+
+.row {
+    flex-wrap: nowrap !important;
 }
 
 #testimonials {
