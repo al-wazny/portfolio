@@ -1,0 +1,43 @@
+.btn {
+    padding: calc($space-s - 2px) $space-m;
+}
+
+.btn-primary {
+    &:hover {
+        background-color: white;
+        color: $primary-color !important;
+    }
+
+    &:focus {
+        box-shadow: none !important;
+    }
+
+    &:active {
+        background-color: $primary-color !important;
+        color: white !important;
+    }
+
+    background-color: $primary-color;
+    border-color: $primary-color !important;
+    color: white !important;
+}
+
+.btn-outline-dark {
+    &:hover {
+        background-color: $second-secondary-color;
+        color: white !important;
+    }
+
+    color: $second-secondary-color;
+    border-color: $second-secondary-color;
+}
+
+.card {
+    max-width: 364px;
+    padding: $space-m;
+    border: none !important;
+}
+
+.row {
+    flex-wrap: nowrap !important;
+}
