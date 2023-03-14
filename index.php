@@ -46,34 +46,34 @@
             <div class="container">
                 <div class="row">
                     <?= service(
-                        'bluber',
+                        '../../assets/icons/Grafich Design.png',
                         "Website Hosting",
                         'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
                     );
                     service(
-                        "blub",
+                        "../../assets/icons/011-logo.png",
                         'Automation',
                         'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
                     );
                     service(
-                        "blub",
+                        "../../assets/icons/039-branding.png",
                         'Graphic Design',
                         'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
                     ); ?>
                 </div>
                 <div class="row">
                     <?= service(
-                        "blub",
+                        "../../assets/icons/Group.png",
                         'Web development',
                         'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
                     ); 
                     service(
-                        "blub",
+                        "../../assets/icons/Group(1).png",
                         'Website Hosting',
                         'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
                     );
                     service(
-                        "blub",
+                        "../../assets/icons/Grafich Design.png",
                         'Graphic Design',
                         'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
                     ); ?>
