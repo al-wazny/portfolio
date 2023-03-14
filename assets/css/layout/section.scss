@@ -3,6 +3,7 @@ $blured-circle-height: 267px;
 $agency-desc-spacing-bottom: $base-space * 5;
 $btn-spacing-right: $base-space * 2.5;
 $stats-spacing: $base-space * 9;
+$introduction-spacing-top: 82px;
 
 section {
     margin: 120px 0;
@@ -18,7 +19,7 @@ section {
 
 // TODO set break point for the blured circles (<1200px)
 #introduction {
-    margin-top: 82px;
+    margin-top: $introduction-spacing-top;
     
     .intro {
         font-size: $font-size-m;
@@ -84,7 +85,7 @@ section {
 }
 
 .btn {
-    padding: $space-s $space-m;
+    padding: calc($space-s - 2px) $space-m;
 }
 
 .btn-primary {

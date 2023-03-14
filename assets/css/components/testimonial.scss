@@ -31,12 +31,12 @@ $testimonial-seperator: 1px solid #F2F2F2;;
         .author {
             font-size: $font-size-m;
             font-weight: $font-weight-bold;
-            color: #17171F;
+            color: $font-color-blue-dark;
         }
 
         .company,
         .rating {
-            color: #414142;
+            color: $font-color-grey;
         }
 
         .rating {
