@@ -14,9 +14,10 @@
     <title>Document</title>
 </head>
 <body>
+    <?= navigation(); ?>
     <main>
-        <div class="container">
-            <section id="introduction">
+        <section id="introduction">
+            <div class="container">
                 <div class="row">
                     <div class="col-6">
                         <p class="intro">A trusted digital agency</p>
@@ -38,9 +39,11 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section id="testimonials">
-                <p>Testimonials</p>
+            </div>
+        </section>
+        <section id="testimonials">
+            <div class="container">
+                <p class="title">Testimonials</p>
                 <h2>What Our Clients Say About Us</h2>
                 <div class="d-flex">
                     <?= testimonial(
@@ -65,8 +68,8 @@
                         5
                     );?>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>

@@ -18,6 +18,8 @@ section {
 
 // TODO set break point for the blured circles (<1200px)
 #introduction {
+    margin-top: 82px;
+    
     .intro {
         font-size: $font-size-m;
         color: $primary-color;
@@ -54,25 +56,7 @@ section {
         margin-bottom: $space-xxl;
 
         .btn-primary {
-            &:hover {
-                background-color: white;
-                color: $primary-color;
-            }
-
-            background-color: $primary-color;
-            border-color: $primary-color;
             margin-right: $btn-spacing-right;
-            color: white;
-        }
-
-        .btn-outline-dark {
-            &:hover {
-                background-color: $second-secondary-color;
-                color: white;
-            }
-
-            color: $second-secondary-color;
-            border-color: $second-secondary-color;
         }
     }
 
@@ -99,8 +83,42 @@ section {
     }
 }
 
+.btn {
+    padding: $space-s $space-m;
+}
+
+.btn-primary {
+    &:hover {
+        background-color: white;
+        color: $primary-color !important;
+    }
+
+    &:focus {
+        box-shadow: none !important;
+    }
+
+    &:active {
+        background-color: $primary-color !important;
+        color: white !important;
+    }
+
+    background-color: $primary-color;
+    border-color: $primary-color !important;
+    color: white !important;
+}
+
+.btn-outline-dark {
+    &:hover {
+        background-color: $second-secondary-color;
+        color: white !important;
+    }
+
+    color: $second-secondary-color;
+    border-color: $second-secondary-color;
+}
+
 #testimonials {
-    > p {
+    .title {
         text-align: center;
         font-size: $font-size-l;
         margin-bottom: $space-s;
