@@ -69,7 +69,7 @@
 }
 .service p {
   color: #414142;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 section {
@@ -140,46 +140,6 @@ section h2 {
   filter: blur(250px);
 }
 
-.btn {
-  padding: calc(1rem - 2px) 1.5rem;
-}
-
-.btn-primary {
-  background-color: #BE3144;
-  border-color: #BE3144 !important;
-  color: white !important;
-}
-.btn-primary:hover {
-  background-color: white;
-  color: #BE3144 !important;
-}
-.btn-primary:focus {
-  box-shadow: none !important;
-}
-.btn-primary:active {
-  background-color: #BE3144 !important;
-  color: white !important;
-}
-
-.btn-outline-dark {
-  color: #3B4159;
-  border-color: #3B4159;
-}
-.btn-outline-dark:hover {
-  background-color: #3B4159;
-  color: white !important;
-}
-
-.card {
-  max-width: 364px;
-  padding: 1.5rem;
-  border: none !important;
-}
-
-.row {
-  flex-wrap: nowrap !important;
-}
-
 #testimonials .title {
   text-align: center;
   font-size: 1.5rem;
@@ -227,6 +187,42 @@ nav .language-switch {
 nav .language-switch select {
   background-color: transparent;
   border: none;
+}
+
+#bootstrap-overrides .btn {
+  padding: calc(1rem - 2px) 1.5rem;
+}
+#bootstrap-overrides .btn-primary {
+  background-color: #BE3144;
+  border-color: #BE3144;
+  color: white;
+}
+#bootstrap-overrides .btn-primary:hover {
+  background-color: white;
+  color: #BE3144;
+}
+#bootstrap-overrides .btn-primary:focus {
+  box-shadow: none;
+}
+#bootstrap-overrides .btn-primary:active {
+  background-color: #BE3144;
+  color: white;
+}
+#bootstrap-overrides .btn-outline-dark {
+  color: #3B4159;
+  border-color: #3B4159;
+}
+#bootstrap-overrides .btn-outline-dark:hover {
+  background-color: #3B4159;
+  color: white;
+}
+#bootstrap-overrides .card {
+  max-width: 364px;
+  padding: 1.5rem;
+  border: none;
+}
+#bootstrap-overrides .row {
+  flex-wrap: nowrap;
 }
 
 body {

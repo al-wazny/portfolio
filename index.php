@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../assets/css/index.css">
     <title>Document</title>
 </head>
-<body>
+<body id="bootstrap-overrides">
     <?= navigation(); ?>
     <main>
         <section id="introduction">

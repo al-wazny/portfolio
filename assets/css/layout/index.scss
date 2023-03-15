@@ -1,43 +1,45 @@
-.btn {
-    padding: calc($space-s - 2px) $space-m;
-}
-
-.btn-primary {
-    &:hover {
-        background-color: white;
-        color: $primary-color !important;
+#bootstrap-overrides {
+    .btn {
+        padding: calc($space-s - 2px) $space-m;
     }
-
-    &:focus {
-        box-shadow: none !important;
+    
+    .btn-primary {
+        &:hover {
+            background-color: white;
+            color: $primary-color;
+        }
+    
+        &:focus {
+            box-shadow: none;
+        }
+    
+        &:active {
+            background-color: $primary-color;
+            color: white;
+        }
+    
+        background-color: $primary-color;
+        border-color: $primary-color;
+        color: white;
     }
-
-    &:active {
-        background-color: $primary-color !important;
-        color: white !important;
+    
+    .btn-outline-dark {
+        &:hover {
+            background-color: $second-secondary-color;
+            color: white;
+        }
+    
+        color: $second-secondary-color;
+        border-color: $second-secondary-color;
     }
-
-    background-color: $primary-color;
-    border-color: $primary-color !important;
-    color: white !important;
-}
-
-.btn-outline-dark {
-    &:hover {
-        background-color: $second-secondary-color;
-        color: white !important;
+    
+    .card {
+        max-width: 364px;
+        padding: $space-m;
+        border: none;
     }
-
-    color: $second-secondary-color;
-    border-color: $second-secondary-color;
-}
-
-.card {
-    max-width: 364px;
-    padding: $space-m;
-    border: none !important;
-}
-
-.row {
-    flex-wrap: nowrap !important;
+    
+    .row {
+        flex-wrap: nowrap;
+    }
 }
