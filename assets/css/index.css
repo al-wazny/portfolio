@@ -213,6 +213,65 @@ nav .language-switch select {
   border: none;
 }
 
+footer {
+  background-color: #1A2033;
+  color: white;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+footer img {
+  margin-bottom: 1.5rem;
+}
+footer img ~ p {
+  max-width: 350px;
+}
+footer h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+footer .services-col {
+  margin-left: 100px;
+}
+footer .services-col ul {
+  list-style: none;
+}
+footer .services-col ul li {
+  margin-bottom: 1rem;
+}
+footer .services-col ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer .contact-col h3,
+footer .contact-col .email,
+footer .contact-col .social-media > p {
+  margin-bottom: 1.5rem;
+}
+footer .contact-col .whats-app svg,
+footer .contact-col .email svg {
+  height: 20px;
+  width: 20px;
+}
+footer .contact-col .whats-app p,
+footer .contact-col .email p {
+  display: inline;
+  margin-left: 0.5rem;
+}
+footer .contact-col .whats-app {
+  margin-bottom: 1.25rem;
+}
+footer .contact-col .social-media a {
+  color: white;
+}
+footer .contact-col .social-media svg {
+  width: 36px;
+  height: 36px;
+}
+footer .contact-col .social-media svg:first-of-type {
+  margin-right: 1rem;
+}
+
 #bootstrap-overrides .btn {
   padding: calc(1rem - 2px) 1.5rem;
 }

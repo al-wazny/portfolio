@@ -1,0 +1,77 @@
+footer { 
+    background-color: $first-secondary-color;
+    color: white;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+
+    img {
+        margin-bottom: $space-m;
+    }
+
+    img ~ p {
+        max-width: 350px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: $font-weight-bold;
+        margin-bottom: 1.5rem;
+    }
+
+    .services-col {
+        margin-left: 100px;
+
+        ul {
+            list-style: none;
+
+            li {
+                margin-bottom: 1rem;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .contact-col {
+        h3,
+        .email,
+        .social-media > p {
+            margin-bottom: 1.5rem;
+        }
+
+        .whats-app,
+        .email {
+            svg {
+                height: 20px;
+                width: 20px;
+            }
+
+            p {
+                display: inline;
+                margin-left: $space-xs;
+            }
+        }
+
+        .whats-app {
+            margin-bottom: 1.25rem;
+        }
+
+        .social-media {
+            a {
+                color: white;
+            }
+            
+            svg {
+                width: 36px;
+                height: 36px;
+
+                &:first-of-type {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}

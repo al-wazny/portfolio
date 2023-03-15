@@ -125,5 +125,9 @@
             </div>
         </section>
     </main>
+
+    <?= footer() ?>
+    
+    <script src="https://kit.fontawesome.com/6c8be80177.js" crossorigin="anonymous"></script>
 </body>
 </html>
