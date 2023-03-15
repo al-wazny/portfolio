@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../assets/css/index.css">
     <title>Document</title>
 </head>
-<body>
+<body id="bootstrap-overrides">
     <?= navigation(); ?>
     <main>
         <section id="introduction">
@@ -41,6 +41,46 @@
                 </div>
             </div>
         </section>
+        
+        <section id="services">
+            <div class="container">
+                <div class="row">
+                    <?= service(
+                        '../../assets/icons/Grafich Design.png',
+                        "Website Hosting",
+                        'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
+                    );
+                    service(
+                        "../../assets/icons/011-logo.png",
+                        'Automation',
+                        'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
+                    );
+                    service(
+                        "../../assets/icons/039-branding.png",
+                        'Graphic Design',
+                        'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
+                    ); ?>
+                </div>
+                <div class="row">
+                    <?= service(
+                        "../../assets/icons/Group.png",
+                        'Web development',
+                        'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
+                    ); 
+                    service(
+                        "../../assets/icons/Group(1).png",
+                        'Website Hosting',
+                        'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
+                    );
+                    service(
+                        "../../assets/icons/Grafich Design.png",
+                        'Graphic Design',
+                        'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
+                    ); ?>
+                </div>
+            </div>
+        </section>
+
         <section id="testimonials">
             <div class="container">
                 <p class="title">Testimonials</p>

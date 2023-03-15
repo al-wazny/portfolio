@@ -1,6 +1,6 @@
 <?php function testimonial(String $imgPath, String $testimonial, String $name, String $company, int $rating) { ?>
-    <div class="testimonial-wrapper">
-        <img class="rounded-circle" src="../../assets/img/placeholder-user.png" alt="client placeholder image">
+    <div class="testimonial-wrapper card">
+        <img class="rounded-circle" src="<?= $imgPath ?>" alt="client placeholder image">
         <p class="testimonial">
             “<?= $testimonial ?>"
         </p>

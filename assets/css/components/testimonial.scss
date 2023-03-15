@@ -6,10 +6,8 @@ $testimonial-seperator: 1px solid #F2F2F2;;
 .testimonial-wrapper {
     margin: 0 ($space-m / 2);
     margin-top: $client-img-height / 2;
-    padding: $space-m;
     background-color: white;
     box-shadow: $testimonial-shadow;
-    max-width: $testimonial-width;
     border-radius: 14px;
     position: relative;
 
