@@ -147,6 +147,30 @@ section h2 {
   color: #BE3144;
 }
 
+#contact {
+  padding-top: 80px;
+}
+#contact .contact-wrapper {
+  padding: 4rem 6.25rem;
+  background-color: #BE3144;
+  color: white;
+  border-radius: 8px;
+}
+#contact .contact-wrapper h3 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+#contact .contact-wrapper p {
+  font-size: 1.125rem;
+}
+#contact .contact-wrapper .btn {
+  background-color: white;
+  color: #17171F;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
 nav {
   height: -webkit-fit-content;
   height: -moz-fit-content;

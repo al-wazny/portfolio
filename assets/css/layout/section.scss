@@ -92,3 +92,31 @@ section {
         color: $primary-color;
     }
 }
+
+#contact {
+    padding-top: 80px;
+
+    .contact-wrapper {
+        padding: $space-xxl ($base-space * 12.5);
+        background-color: $primary-color;
+        color: white;
+        border-radius: 8px;
+
+        h3 {
+            font-size: 2.25rem;
+            font-weight: $font-weight-bolder;
+            margin-bottom: $space-s;
+        }
+
+        p {
+            font-size: $font-size-m;
+        }
+
+        .btn {
+            background-color: white;
+            color: $font-color-blue-dark;
+            font-size: $font-size-m;
+            font-weight: $font-weight-bold;
+        }
+    }
+}

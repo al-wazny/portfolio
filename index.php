@@ -110,6 +110,20 @@
                 </div>
             </div>
         </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="contact-wrapper row">
+                    <div class="col-9">
+                        <h3>Let's work together</h3>
+                        <p>We're a team of non-cynics who truly care for our work.</p>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center align-items-center">
+                        <a class="btn" href="#">Get A Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
