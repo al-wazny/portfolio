@@ -1,0 +1,34 @@
+.hidden {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden-introduction {
+  opacity: 0;
+  transition: all 2s;
+}
+.hidden-introduction .col-6 {
+  transition: all 2s;
+}
+.hidden-introduction .col-6:first-of-type {
+  transform: translateX(-100px);
+}
+.hidden-introduction .col-6:last-of-type {
+  transform: translateX(100px);
+}
+
+.show-introduction {
+  opacity: 1;
+}
+.show-introduction .col-6:first-of-type {
+  transform: translateX(0);
+}
+.show-introduction .col-6:last-of-type {
+  transform: translateX(0);
+}/*# sourceMappingURL=animation.css.map */
