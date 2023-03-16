@@ -16,7 +16,7 @@
 <body id="bootstrap-overrides">
     <?= navigation(); ?>
     <main>
-        <section class="hidden-introduction" id="introduction">
+        <section class="hidden" id="introduction">
             <div class="container">
                 <div class="row">
                     <div class="col-6">

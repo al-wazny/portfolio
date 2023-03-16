@@ -1,34 +1,33 @@
-.hidden {
+.hidden:not(#introduction) {
   opacity: 0;
   transform: translateY(100px);
   transition: all 2s;
 }
 
-.show {
+.show:not(#introduction) {
   opacity: 1;
   transform: translateY(0);
 }
 
-.hidden-introduction {
+#introduction.hidden {
   opacity: 0;
   transition: all 2s;
 }
-.hidden-introduction .col-6 {
+#introduction.hidden .col-6 {
   transition: all 2s;
 }
-.hidden-introduction .col-6:first-of-type {
+#introduction.hidden .col-6:first-of-type {
   transform: translateX(-100px);
 }
-.hidden-introduction .col-6:last-of-type {
+#introduction.hidden .col-6:last-of-type {
   transform: translateX(100px);
 }
-
-.show-introduction {
+#introduction.show {
   opacity: 1;
 }
-.show-introduction .col-6:first-of-type {
+#introduction.show .col-6:first-of-type {
   transform: translateX(0);
 }
-.show-introduction .col-6:last-of-type {
+#introduction.show .col-6:last-of-type {
   transform: translateX(0);
 }/*# sourceMappingURL=animation.css.map */

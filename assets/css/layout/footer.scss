@@ -1,31 +1,30 @@
+$footer-icon-contact-size: 20px;
+$footer-icon-social-media-size: 36px;
+
 footer { 
     background-color: $first-secondary-color;
     color: white;
-    padding-top: 4rem;
-    padding-bottom: 3rem;
+    padding-top: $space-xxl;
+    padding-bottom: $space-xl;
 
     img {
         margin-bottom: $space-m;
     }
 
-    img ~ p {
-        max-width: 350px;
-    }
-
     h3 {
-        font-size: 1.5rem;
+        font-size: $font-size-l;
         font-weight: $font-weight-bold;
-        margin-bottom: 1.5rem;
+        margin-bottom: $space-m;
     }
 
     .services-col {
-        margin-left: 100px;
+        margin-left: $space-xxxl;
 
         ul {
             list-style: none;
 
             li {
-                margin-bottom: 1rem;
+                margin-bottom: $space-s;
 
                 a {
                     color: white;
@@ -39,14 +38,14 @@ footer {
         h3,
         .email,
         .social-media > p {
-            margin-bottom: 1.5rem;
+            margin-bottom: $space-m;
         }
 
         .whats-app,
         .email {
             svg {
-                height: 20px;
-                width: 20px;
+                height: $footer-icon-contact-size;
+                width: $footer-icon-contact-size;
             }
 
             p {
@@ -56,7 +55,7 @@ footer {
         }
 
         .whats-app {
-            margin-bottom: 1.25rem;
+            margin-bottom: $space-s;
         }
 
         .social-media {
@@ -65,11 +64,11 @@ footer {
             }
             
             svg {
-                width: 36px;
-                height: 36px;
+                width: $footer-icon-social-media-size;
+                height: $footer-icon-social-media-size;
 
                 &:first-of-type {
-                    margin-right: 1rem;
+                    margin-right: $space-s;
                 }
             }
         }

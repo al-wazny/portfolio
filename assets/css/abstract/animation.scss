@@ -1,41 +1,46 @@
 $animation-duration: 2s;
+$animation-distance: 100px;
+$animation-negative-distance: $animation-distance * -1;
 
-.hidden {
+.hidden:not(#introduction) {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY($animation-distance);
     transition: all $animation-duration;
 }
 
-.show {
+.show:not(#introduction) {
     opacity: 1;
     transform: translateY(0);
 }
 
-.hidden-introduction {
-    opacity: 0;
-    transition: all $animation-duration;
-
-    .col-6 {
+#introduction {
+    &.hidden {
+        opacity: 0;
         transition: all $animation-duration;
 
-        &:first-of-type {
-            transform: translateX(-100px);
+        .col-6 {
+            transition: all $animation-duration;
+
+            &:first-of-type {
+                transform: translateX($animation-negative-distance);
+            }
+            &:last-of-type {
+                transform: translateX($animation-distance);
+            }
         }
-        &:last-of-type {
-            transform: translateX(100px);
+    }
+    
+    &.show {
+        opacity: 1;
+
+        .col-6 {
+            &:first-of-type {
+                transform: translateX(0);
+            }
+            &:last-of-type {
+                transform: translateX(0);
+            }
         }
     }
 }
 
-.show-introduction {
-    opacity: 1;
-
-    .col-6 {
-        &:first-of-type {
-            transform: translateX(0);
-        }
-        &:last-of-type {
-            transform: translateX(0);
-        }
-    }
-}
