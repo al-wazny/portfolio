@@ -16,7 +16,7 @@
 <body id="bootstrap-overrides">
     <?= navigation(); ?>
     <main>
-        <section id="introduction">
+        <section class="hidden" id="introduction">
             <div class="container">
                 <div class="row">
                     <div class="col-6">
@@ -42,7 +42,8 @@
             </div>
         </section>
         
-        <section id="services">
+        <section class="hidden" id="services">
+            <h2>Our Services</h2>
             <div class="container">
                 <div class="row">
                     <?= service(
@@ -81,7 +82,7 @@
             </div>
         </section>
 
-        <section id="testimonials">
+        <section class="hidden" id="testimonials">
             <div class="container">
                 <p class="title">Testimonials</p>
                 <h2>What Our Clients Say About Us</h2>
@@ -111,7 +112,7 @@
             </div>
         </section>
 
-        <section id="contact">
+        <section class="hidden" id="contact">
             <div class="container">
                 <div class="contact-wrapper row">
                     <div class="col-9">
@@ -125,5 +126,10 @@
             </div>
         </section>
     </main>
+
+    <?= footer() ?>
+    
+    <script src="https://kit.fontawesome.com/6c8be80177.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/intersect.js"></script>
 </body>
 </html>

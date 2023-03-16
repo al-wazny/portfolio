@@ -1,3 +1,37 @@
+.hidden:not(#introduction) {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 2s;
+}
+
+.show:not(#introduction) {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#introduction.hidden {
+  opacity: 0;
+  transition: all 2s;
+}
+#introduction.hidden .col-6 {
+  transition: all 2s;
+}
+#introduction.hidden .col-6:first-of-type {
+  transform: translateX(-100px);
+}
+#introduction.hidden .col-6:last-of-type {
+  transform: translateX(100px);
+}
+#introduction.show {
+  opacity: 1;
+}
+#introduction.show .col-6:first-of-type {
+  transform: translateX(0);
+}
+#introduction.show .col-6:last-of-type {
+  transform: translateX(0);
+}
+
 .testimonial-wrapper {
   margin: 0 0.75rem;
   margin-top: 32px;
@@ -85,6 +119,7 @@ section h2 {
 
 #introduction {
   margin-top: 82px;
+  height: 70vh;
 }
 #introduction .intro {
   font-size: 1.125rem;
@@ -211,6 +246,62 @@ nav .language-switch {
 nav .language-switch select {
   background-color: transparent;
   border: none;
+}
+
+footer {
+  background-color: #1A2033;
+  color: white;
+  padding-top: 4rem;
+  padding-bottom: 3.5rem;
+}
+footer img {
+  margin-bottom: 1.5rem;
+}
+footer h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+footer .services-col {
+  margin-left: 6rem;
+}
+footer .services-col ul {
+  list-style: none;
+}
+footer .services-col ul li {
+  margin-bottom: 1rem;
+}
+footer .services-col ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer .contact-col h3,
+footer .contact-col .email,
+footer .contact-col .social-media > p {
+  margin-bottom: 1.5rem;
+}
+footer .contact-col .whats-app svg,
+footer .contact-col .email svg {
+  height: 20px;
+  width: 20px;
+}
+footer .contact-col .whats-app p,
+footer .contact-col .email p {
+  display: inline;
+  margin-left: 0.5rem;
+}
+footer .contact-col .whats-app {
+  margin-bottom: 1rem;
+}
+footer .contact-col .social-media a {
+  color: white;
+}
+footer .contact-col .social-media svg {
+  width: 36px;
+  height: 36px;
+}
+footer .contact-col .social-media svg:first-of-type {
+  margin-right: 1rem;
 }
 
 #bootstrap-overrides .btn {
