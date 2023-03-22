@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
 <body id="bootstrap-overrides">
@@ -28,9 +29,11 @@
                             <a class="btn btn-outline-dark">Our Services</a>
                         </div>
                         <div class="stats d-flex">
-                            <?= experienceStat("10+", "Years experience") ?>
-                            <?= experienceStat("96+", "Satisfied Clients") ?>
-                            <?= experienceStat("99+", "Projects Completed") ?>
+                            <?= 
+                            experienceStat(10, "Years experience");
+                            experienceStat(96, "Satisfied Clients");
+                            experienceStat(99, "Projects Completed"); 
+                            ?>
                         </div>
                     </div>
                     <div class="col-6">
@@ -45,8 +48,9 @@
         <section class="hidden" id="services">
             <h2>Our Services</h2>
             <div class="container">
-                <div class="row">
-                    <?= service(
+                <div class="grid">
+                    <?= 
+                    service(
                         '../../assets/icons/Grafich Design.png',
                         "Website Hosting",
                         'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
@@ -60,10 +64,8 @@
                         "../../assets/icons/039-branding.png",
                         'Graphic Design',
                         'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
-                    ); ?>
-                </div>
-                <div class="row">
-                    <?= service(
+                    ); 
+                    service(
                         "../../assets/icons/Group.png",
                         'Web development',
                         'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
@@ -77,7 +79,48 @@
                         "../../assets/icons/Grafich Design.png",
                         'Graphic Design',
                         'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
-                    ); ?>
+                    ); 
+                    ?>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden" id="projects">
+            <div class="container">
+                <h2>Our recent Projects</h2>
+                <div class="grid">
+                    <?=
+                    project(
+                        '../../assets/img/Rectangle 4401(1).png',
+                        'Lensology',
+                        'Graphic Design, Web Design & Development'
+                    );
+                    project(
+                        '../../assets/img/Rectangle 4401.png',
+                        'IndigoFitness',
+                        'Graphic Design, Web Design & Development'
+                    );
+                    project(
+                        '../../assets/img/Rectangle 4401(1).png',
+                        'The Green Program',
+                        'Graphic Design, Web Design & Development'
+                    );
+                    project(
+                        '../../assets/img/Rectangle 4401.png',
+                        'FastPAYE',
+                        'Graphic Design, Web Design & Development'
+                    );
+                    project(
+                        '../../assets/img/Rectangle 4401(1).png',
+                        'Prime UK Management',
+                        'Graphic Design, Web Design & Development'
+                    );
+                    project(
+                        '../../assets/img/Rectangle 4401.png',
+                        'PAX Home',
+                        'Graphic Design, Web Design & Development'
+                    );
+                    ?>
                 </div>
             </div>
         </section>
@@ -86,28 +129,68 @@
             <div class="container">
                 <p class="title">Testimonials</p>
                 <h2>What Our Clients Say About Us</h2>
-                <div class="d-flex">
-                    <?= testimonial(
-                        "../assets/img/placeholder-user.png",
-                        "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
-                        "Cooper, Kristin",
-                        "Amazon",
-                        4
-                    ); 
-                    testimonial(
-                        "../assets/img/placeholder-user.png",
-                        "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
-                        "Cooper, Kristin",
-                        "Amazon",
-                        3
-                    );
-                    testimonial(
-                        "../assets/img/placeholder-user.png",
-                        "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
-                        "Cooper, Kristin",
-                        "Amazon",
-                        5
-                    );?>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <?= testimonial(
+                                "../assets/img/placeholder-user.png",
+                                "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
+                                "Cooper, Kristin",
+                                "Amazon",
+                                4
+                           ); ?>   
+                        </div>
+                        <div class="swiper-slide">
+                            <?= testimonial(
+                                "../assets/img/placeholder-user.png",
+                               "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
+                                "Cooper, Kristin",
+                               "Amazon",
+                                4
+                           ); ?> 
+                        </div>
+                        <div class="swiper-slide">
+                            <?= testimonial(
+                                "../assets/img/placeholder-user.png",
+                               "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
+                                "Cooper, Kristin",
+                               "Amazon",
+                                4
+                           ); ?> 
+                        </div>
+                        <div class="swiper-slide">
+                            <?= testimonial(
+                                "../assets/img/placeholder-user.png",
+                               "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
+                                "Cooper, Kristin",
+                               "Amazon",
+                                4
+                           ); ?> 
+                        </div>
+                        <div class="swiper-slide">
+                            <?= testimonial(
+                                "../assets/img/placeholder-user.png",
+                               "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
+                                "Cooper, Kristin",
+                               "Amazon",
+                                4
+                           ); ?> 
+                        </div>
+                        <div class="swiper-slide">
+                            <?= testimonial(
+                                    "../assets/img/placeholder-user.png",
+                                "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
+                                    "Cooper, Kristin",
+                                "Amazon",
+                                    4
+                            ); ?> 
+                        </div>
+                   
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </section>
@@ -130,6 +213,7 @@
     <?= footer() ?>
     
     <script src="https://kit.fontawesome.com/6c8be80177.js" crossorigin="anonymous"></script>
-    <script src="./assets/js/intersect.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>

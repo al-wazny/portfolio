@@ -3,8 +3,24 @@ $testimonial-shadow: 3px 5px 55px 2px rgba(0, 0, 0, 0.05);
 $testimonial-width: 364px;
 $testimonial-seperator: 1px solid #F2F2F2;;
 
+
+.mySwiper {
+    overflow-y: visible !important;
+    overflow-x: clip !important;
+
+    .swiper-slide {
+        background-color: transparent !important;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: $primary-color;
+    }
+}
+
+
 .testimonial-wrapper {
-    margin: 0 ($space-m / 2);
+    margin: 0 auto;
     margin-top: $client-img-height / 2;
     background-color: white;
     box-shadow: $testimonial-shadow;
@@ -30,6 +46,7 @@ $testimonial-seperator: 1px solid #F2F2F2;;
             font-size: $font-size-m;
             font-weight: $font-weight-bold;
             color: $font-color-blue-dark;
+            text-align: start;
         }
 
         .company,

@@ -18,7 +18,11 @@ footer {
     }
 
     .services-col {
-        margin-left: $space-xxxl;
+        // padding-left: $space-l;
+        
+        // @media (min-width: 992px) {
+        //     padding-left: $space-xxxl;
+        // }
 
         ul {
             list-style: none;
