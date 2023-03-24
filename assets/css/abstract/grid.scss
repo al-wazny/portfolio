@@ -1,13 +1,23 @@
 .grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
 
-    @media (min-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    > *:nth-of-type(odd) {
+      margin-left: auto;
     }
 
-    @media (min-width: 1200px) {
-        grid-template-columns: repeat(3, 1fr);
+    > *:nth-of-type(even) {
+      margin-right: auto;
     }
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

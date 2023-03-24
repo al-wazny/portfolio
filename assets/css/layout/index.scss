@@ -1,45 +1,45 @@
 #bootstrap-overrides {
-    .btn {
-        padding: calc($space-s - 2px) $space-m;
+  .btn {
+    padding: calc($space-s - 2px) $space-m;
+  }
+
+  .btn-primary {
+    &:hover {
+      background-color: white;
+      color: $primary-color;
     }
-    
-    .btn-primary {
-        &:hover {
-            background-color: white;
-            color: $primary-color;
-        }
-    
-        &:focus {
-            box-shadow: none;
-        }
-    
-        &:active {
-            background-color: $primary-color;
-            color: white;
-        }
-    
-        background-color: $primary-color;
-        border-color: $primary-color;
-        color: white;
+
+    &:focus {
+      box-shadow: none;
     }
-    
-    .btn-outline-dark {
-        &:hover {
-            background-color: $second-secondary-color;
-            color: white;
-        }
-    
-        color: $second-secondary-color;
-        border-color: $second-secondary-color;
+
+    &:active {
+      background-color: $primary-color;
+      color: white;
     }
-    
-    .card {
-        max-width: 364px;
-        padding: $space-m;
-        border: none;
+
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: white;
+  }
+
+  .btn-outline-dark {
+    &:hover {
+      background-color: $second-secondary-color;
+      color: white;
     }
-    
-    // .row {
-    //     flex-wrap: nowrap;
-    // }
+
+    color: $second-secondary-color;
+    border-color: $second-secondary-color;
+  }
+
+  .card {
+    max-width: 340px;
+    padding: $space-m;
+    border: none;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $primary-color;
+  }
 }

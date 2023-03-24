@@ -8,6 +8,14 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (min-width: 992px) and (max-width: 1200px) {
+  .grid > *:nth-of-type(odd) {
+    margin-left: auto;
+  }
+  .grid > *:nth-of-type(even) {
+    margin-right: auto;
+  }
+}
 @media (min-width: 1200px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);

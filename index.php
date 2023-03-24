@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.2.0/css/swiper.min.css">
     <title>Document</title>
 </head>
 <body id="bootstrap-overrides">
@@ -125,72 +125,66 @@
             </div>
         </section>
 
-        <section class="hidden" id="testimonials">
+
+        <section class="hidden swiper-cpagination" id="testimonials">
             <div class="container">
                 <p class="title">Testimonials</p>
                 <h2>What Our Clients Say About Us</h2>
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <?= testimonial(
-                                "../assets/img/placeholder-user.png",
-                                "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
-                                "Cooper, Kristin",
-                                "Amazon",
-                                4
-                           ); ?>   
-                        </div>
-                        <div class="swiper-slide">
-                            <?= testimonial(
-                                "../assets/img/placeholder-user.png",
-                               "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
-                                "Cooper, Kristin",
-                               "Amazon",
-                                4
-                           ); ?> 
-                        </div>
-                        <div class="swiper-slide">
-                            <?= testimonial(
-                                "../assets/img/placeholder-user.png",
-                               "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
-                                "Cooper, Kristin",
-                               "Amazon",
-                                4
-                           ); ?> 
-                        </div>
-                        <div class="swiper-slide">
-                            <?= testimonial(
-                                "../assets/img/placeholder-user.png",
-                               "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
-                                "Cooper, Kristin",
-                               "Amazon",
-                                4
-                           ); ?> 
-                        </div>
-                        <div class="swiper-slide">
-                            <?= testimonial(
-                                "../assets/img/placeholder-user.png",
-                               "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
-                                "Cooper, Kristin",
-                               "Amazon",
-                                4
-                           ); ?> 
-                        </div>
-                        <div class="swiper-slide">
-                            <?= testimonial(
-                                    "../assets/img/placeholder-user.png",
-                                "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
-                                    "Cooper, Kristin",
-                                "Amazon",
-                                    4
-                            ); ?> 
-                        </div>
-                   
+                <div class="swiper-container swiper-container-horizontal loco_listing__carousel" data-slides-per-view="3" data-space-between="30" data-loop="true" data-click="false" data-spvxs="1" data-center-xs-slide="true" data-spvsm="auto" data-spvmd="2" data-spvlg="3" data-spvxl="3" data-dynamic-bullets="true" data-free-mode="true">
+                    <div class="swiper-wrapper pb-5">
+                        <?= 
+                        testimonial(
+                            "../assets/img/placeholder-user.png",
+                            "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
+                            "Cooper, Kristin",
+                            "Amazon",
+                            4
+                        ); 
+                        testimonial(
+                            "../assets/img/placeholder-user.png",
+                            "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
+                            "Cooper, Kristin",
+                            "Amazon",
+                            4
+                        ); 
+                        testimonial(
+                            "../assets/img/placeholder-user.png",
+                            "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
+                            "Cooper, Kristin",
+                            "Amazon",
+                            4
+                        ); 
+                        testimonial(
+                            "../assets/img/placeholder-user.png",
+                            "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
+                            "Cooper, Kristin",
+                            "Amazon",
+                            4
+                        ); 
+                        testimonial(
+                            "../assets/img/placeholder-user.png",
+                            "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
+                            "Cooper, Kristin",
+                            "Amazon",
+                            4
+                        ); 
+                        testimonial(
+                            "../assets/img/placeholder-user.png",
+                            "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
+                            "Cooper, Kristin",
+                            "Amazon",
+                            4
+                        ); 
+                        testimonial(
+                            "../assets/img/placeholder-user.png",
+                            "The Services provided are really great, we received a genuine advice and at very reasonable cost.",
+                            "Cooper, Kristin",
+                            "Amazon",
+                            4
+                        ); 
+                        ?>
                     </div>
-                    <div class="swiper-pagination"></div>
-
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination loco_carousel__pagination carousel__pagination"></div>
                 </div>
             </div>
         </section>
@@ -211,9 +205,13 @@
     </main>
 
     <?= footer() ?>
-    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.2.0/js/swiper.min.js"></script>
+
     <script src="https://kit.fontawesome.com/6c8be80177.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./assets/js/app.js"></script>
+    
 </body>
 </html>

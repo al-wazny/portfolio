@@ -1,63 +1,46 @@
 $client-img-height: 64px;
 $testimonial-shadow: 3px 5px 55px 2px rgba(0, 0, 0, 0.05);
-$testimonial-width: 364px;
-$testimonial-seperator: 1px solid #F2F2F2;;
-
-
-.mySwiper {
-    overflow-y: visible !important;
-    overflow-x: clip !important;
-
-    .swiper-slide {
-        background-color: transparent !important;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-        color: $primary-color;
-    }
-}
-
+$testimonial-seperator: 1px solid #f2f2f2;
 
 .testimonial-wrapper {
-    margin: 0 auto;
-    margin-top: $client-img-height / 2;
-    background-color: white;
-    box-shadow: $testimonial-shadow;
-    border-radius: 14px;
-    position: relative;
+  margin: 0 auto;
+  margin-top: $client-img-height / 2;
+  background-color: white;
+  box-shadow: $testimonial-shadow;
+  border-radius: 14px;
+  position: relative;
 
-    img {
-        width: $client-img-height;
-        height: $client-img-height;
-        position: absolute;
-        top: ($client-img-height / 2) * -1; // on the middle of the top border
+  img {
+    width: $client-img-height;
+    height: $client-img-height;
+    position: absolute;
+    top: ($client-img-height / 2) * -1; // on the middle of the top border
+  }
+
+  .testimonial {
+    padding-top: $space-l;
+    padding-bottom: $space-m;
+    margin-bottom: $space-m;
+    border-bottom: $testimonial-seperator;
+  }
+
+  .testimonial-footer {
+    .author {
+      font-size: $font-size-m;
+      font-weight: $font-weight-bold;
+      color: $font-color-blue-dark;
+      text-align: start;
     }
 
-    .testimonial {
-        padding-top: $space-l;
-        padding-bottom: $space-m;
-        margin-bottom: $space-m;
-        border-bottom: $testimonial-seperator;
+    .company,
+    .rating {
+      color: $font-color-grey;
     }
 
-    .testimonial-footer {
-        .author {
-            font-size: $font-size-m;
-            font-weight: $font-weight-bold;
-            color: $font-color-blue-dark;
-            text-align: start;
-        }
-
-        .company,
-        .rating {
-            color: $font-color-grey;
-        }
-
-        .rating {
-            .checked {
-                color: $primary-color;
-            }
-        }
+    .rating {
+      .checked {
+        color: $primary-color;
+      }
     }
+  }
 }
