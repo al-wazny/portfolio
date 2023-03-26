@@ -3,44 +3,43 @@ $animation-distance: 100px;
 $animation-negative-distance: $animation-distance * -1;
 
 .hidden:not(#introduction) {
-    opacity: 0;
-    transform: translateY($animation-distance);
-    transition: all $animation-duration;
+  opacity: 0;
+  transform: translateY($animation-distance);
+  transition: all $animation-duration;
 }
 
 .show:not(#introduction) {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #introduction {
-    &.hidden {
-        opacity: 0;
-        transition: all $animation-duration;
+  &.hidden {
+    opacity: 0;
+    transition: all $animation-duration;
 
-        .col-6 {
-            transition: all $animation-duration;
+    .col-lg-6 {
+      transition: all $animation-duration;
 
-            &:first-of-type {
-                transform: translateX($animation-negative-distance);
-            }
-            &:last-of-type {
-                transform: translateX($animation-distance);
-            }
-        }
+      &:first-of-type {
+        transform: translateX($animation-negative-distance);
+      }
+      &:last-of-type {
+        transform: translateX($animation-distance);
+      }
     }
-    
-    &.show {
-        opacity: 1;
+  }
 
-        .col-6 {
-            &:first-of-type {
-                transform: translateX(0);
-            }
-            &:last-of-type {
-                transform: translateX(0);
-            }
-        }
+  &.show {
+    opacity: 1;
+
+    .col-lg-6 {
+      &:first-of-type {
+        transform: translateX(0);
+      }
+      &:last-of-type {
+        transform: translateX(0);
+      }
     }
+  }
 }
-

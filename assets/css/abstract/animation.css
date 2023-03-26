@@ -13,21 +13,21 @@
   opacity: 0;
   transition: all 2s;
 }
-#introduction.hidden .col-6 {
+#introduction.hidden .col-lg-6 {
   transition: all 2s;
 }
-#introduction.hidden .col-6:first-of-type {
+#introduction.hidden .col-lg-6:first-of-type {
   transform: translateX(-100px);
 }
-#introduction.hidden .col-6:last-of-type {
+#introduction.hidden .col-lg-6:last-of-type {
   transform: translateX(100px);
 }
 #introduction.show {
   opacity: 1;
 }
-#introduction.show .col-6:first-of-type {
+#introduction.show .col-lg-6:first-of-type {
   transform: translateX(0);
 }
-#introduction.show .col-6:last-of-type {
+#introduction.show .col-lg-6:last-of-type {
   transform: translateX(0);
 }/*# sourceMappingURL=animation.css.map */

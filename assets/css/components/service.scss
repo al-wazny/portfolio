@@ -3,29 +3,33 @@ $icon-wrapper-color: rgba(47, 198, 255, 0.05);
 $icon-size: 36px;
 
 .service {
-    border-radius: 4px;
-    box-shadow: 3px 5px 55px 2px rgba(0, 0, 0, 0.05);
-    padding: $space-m;
-    margin: $base-space * 1.5;
-    
-    .icon-wrapper {
-        margin-bottom: $space-m;
-        height: $icon-wrapper-size;
-        width: $icon-wrapper-size;
-        background-color: $icon-wrapper-color;
+  border-radius: 4px;
+  box-shadow: 3px 5px 55px 2px rgba(0, 0, 0, 0.05);
+  padding: $space-m;
+  margin: $base-space * 1.5;
 
-        img {
-            height: $icon-size;
-            width: $icon-size;
-        }
+  .icon-wrapper {
+    margin-bottom: $space-m;
+    height: $icon-wrapper-size;
+    width: $icon-wrapper-size;
+    background-color: $icon-wrapper-color;
+
+    img {
+      height: $icon-size;
+      width: $icon-size;
     }
-    h4 {
-        margin-bottom: $space-s;
-        color: $font-color-blue-dark;
-        font-weight: $font-weight-bolder;
+  }
+  h4 {
+    margin-bottom: $space-s;
+    color: $font-color-blue-dark;
+    font-weight: $font-weight-bolder;
+
+    @media (max-width: 568px) {
+      font-size: 1.25rem;
     }
-    p {
-        color: $font-color-grey;
-        font-size: $font-size-s;
-    }
+  }
+  p {
+    color: $font-color-grey;
+    font-size: $font-size-s;
+  }
 }

@@ -1,5 +1,5 @@
 <?php function navigation() { ?>
-    <nav class="w-100 d-flex justify-content-between px-5">
+    <nav class="w-100 d-flex justify-content-between px-2 px-sm-3 px-md-4 px-lg-5">
         <div class="my-auto">
             <img class="logo" src="../../assets/img/Selection_002.png" alt="">
         </div>
@@ -12,7 +12,7 @@
             </ul>
         </div> -->
         <div class="d-flex align-items-center">
-            <div class="language-switch">
+            <div class="language-switch">       
                 <select name="language" id="language">
                     <option value="deutsch">DE</option>
                     <option value="english">EN</option>

@@ -1,18 +1,22 @@
 .stat {
-    h3,
-    p {
-        text-align: center;
-    }
+  h3,
+  p {
+    text-align: center;
+  }
 
-    h3 {
-        line-height: 133%;
-        font-size: 3rem;
-        margin-bottom: $space-s;
-        color: $font-color-blue-dark;
-    }
+  h3 {
+    line-height: 133%;
+    font-size: 3rem;
+    margin-bottom: $space-s;
+    color: $font-color-blue-dark;
 
-    p {
-        white-space: nowrap;
-        color: #3B4159;
+    @media (max-width: 768px) {
+      font-size: 2rem;
     }
+  }
+
+  p {
+    white-space: nowrap;
+    color: #3b4159;
+  }
 }

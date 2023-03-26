@@ -1,19 +1,23 @@
-$project-space: $base-space * .75;
+$project-space: $base-space * 0.75;
 
 .project-wrapper {
-    margin: $project-space;
-    
-    img {
-        margin-bottom: $space-m;
-        max-width: 100%;
+  margin: $project-space;
+
+  img {
+    margin-bottom: $space-m;
+    max-width: 100%;
+  }
+  .project-name {
+    font-size: $font-size-l;
+    font-weight: $font-weight-bolder;
+    margin-bottom: $space-s;
+    color: $font-color-blue-dark;
+
+    @media (max-width: 568px) {
+      font-size: 1.25rem;
     }
-    .project-name {
-        font-size: $font-size-l;
-        font-weight: $font-weight-bolder;
-        margin-bottom: $space-s;
-        color: $font-color-blue-dark;
-    }
-    .project-description {
-        color: $font-color-grey;
-    }
+  }
+  .project-description {
+    color: $font-color-grey;
+  }
 }

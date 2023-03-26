@@ -1,7 +1,7 @@
 <?php function footer() { ?>
     <footer>
         <div class="container">
-            <div class="row">
+            <div class="row px-3">
                 <div class="col-12 col-md-6 col-xl-4 mb-5">
                     <img src="../../assets/img/Auswahl_001__1_-removebg-preview 1.png" alt="">
                     <p>OurStudio is a digital agency UI / UX Design and Website Development located in Ohio, United States of America</p>

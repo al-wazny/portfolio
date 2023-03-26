@@ -20,15 +20,15 @@
         <section class="hidden" id="introduction">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6 text-center text-lg-left">
                         <p class="intro">A trusted digital agency</p>
                         <h1>Digital Product Design Agency</h1>
-                        <p class="agency-description">Octave are a web design agency, creating beautiful, fast and effective websites for new and established businesses.</p>
-                        <div class="btn-area">
+                        <p class="agency-description mb-4">Octave are a web design agency, creating beautiful, fast and effective websites for new and established businesses.</p>
+                        <div class="btn-area d-flex justify-content-center justify-content-lg-start">
                             <a class="btn btn-primary">Our Work</a>
                             <a class="btn btn-outline-dark">Our Services</a>
                         </div>
-                        <div class="stats d-flex">
+                        <div class="stats d-flex flex-column flex-md-row justify-content-center justify-content-lg-start">
                             <?= 
                             experienceStat(10, "Years experience");
                             experienceStat(96, "Satisfied Clients");
@@ -36,8 +36,8 @@
                             ?>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="illustration">
+                    <div class="col-12 col-lg-6">
+                        <div class="illustration d-flex justify-content-center p-0 mt-5 mt-lg-0">
                             <img src="./assets/img/Website designer-amico.svg" alt="">
                         </div>
                     </div>
@@ -192,11 +192,11 @@
         <section class="hidden" id="contact">
             <div class="container">
                 <div class="contact-wrapper row">
-                    <div class="col-9">
+                    <div class="col-12 col-md-9 text-center text-md-left mb-2 mb-md-0">
                         <h3>Let's work together</h3>
                         <p>We're a team of non-cynics who truly care for our work.</p>
                     </div>
-                    <div class="col-3 d-flex justify-content-center align-items-center">
+                    <div class="col-12 col-md-3 d-flex justify-content-center align-items-center">
                         <a class="btn" href="#">Get A Quote</a>
                     </div>
                 </div>

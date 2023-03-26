@@ -6,118 +6,168 @@ $stats-spacing: $base-space * 9;
 $introduction-spacing-top: 82px;
 
 section {
-    margin: 120px 0;
+  margin: 120px 0;
 
-    h2 {
-        text-align: center;
-        color: $first-secondary-color;
-        font-size: 3rem;
-        font-weight: $font-weight-bolder;
-        margin-bottom: $space-xxl;
+  h2 {
+    text-align: center;
+    color: $first-secondary-color;
+    font-size: 3rem;
+    font-weight: $font-weight-bolder;
+    margin-bottom: $space-xxl;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
     }
+  }
 }
 
-// TODO set break point for the blured circles (<1200px)
 #introduction {
-    margin-top: $introduction-spacing-top;
-    height: 70vh;
-    
-    .intro {
-        font-size: $font-size-m;
-        color: $primary-color;
+  margin-top: $introduction-spacing-top;
 
-        &::before {
-            content: '';
-            height: $blured-circle-height;
-            width: $blured-circle-height;
-            background-color: rgba(235, 85, 105, 0.13);
-            position: absolute;
-            top: -100px;
-            left: -233px;
-            border-radius: 50%;
-            filter: blur($blur);
-        }
+  @media (min-width: 375px) {
+    margin-top: $space-xxl;
+  }
+
+  .intro {
+    font-size: $font-size-m;
+    color: $primary-color;
+
+    &::before {
+      content: "";
+      height: $blured-circle-height;
+      width: $blured-circle-height;
+      background-color: rgba(235, 85, 105, 0.13);
+      position: absolute;
+      top: -100px;
+      left: -233px;
+      border-radius: 50%;
+      filter: blur($blur);
+    }
+  }
+
+  h1 {
+    font-weight: $font-weight-bolder;
+    font-size: 3.5rem;
+    line-height: 143%;
+    color: $first-secondary-color;
+    margin-bottom: $space-m;
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .agency-description {
+    line-height: 178%;
+    font-size: $font-size-m;
+    color: $second-secondary-color;
+
+    @media (max-width: 996px) {
+      margin-bottom: $agency-desc-spacing-bottom;
+    }
+  }
+
+  .btn-area {
+    margin-bottom: $space-xxl;
+
+    .btn-primary {
+      margin-right: $btn-spacing-right;
+    }
+  }
+
+  .stat + .stat {
+    margin-left: $stats-spacing;
+
+    @media (max-width: 996px) {
+      margin-left: 2.5rem;
     }
 
-    h1 {
-        font-weight: $font-weight-bolder;
-        font-size: 3.5rem;
-        line-height: 143%;
-        color: $first-secondary-color;
-        margin-bottom: $space-m;
+    @media (max-width: 768px) {
+      margin-left: 0;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .illustration {
+    padding: $space-l;
+    padding-right: 0;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      height: $blured-circle-height;
+      width: $blured-circle-height;
+      background-color: rgba(253, 126, 65, 0.28);
+      border-radius: 50%;
+      bottom: -88px;
+      right: 114px;
+      filter: blur($blur);
     }
 
-    .agency-description {
-        line-height: 178%;
-        font-size: $font-size-m;
-        color: $second-secondary-color;
-        margin-bottom: $agency-desc-spacing-bottom;
+    @media (max-width: 996px) {
+      height: 25rem;
     }
 
-    .btn-area {
-        margin-bottom: $space-xxl;
-
-        .btn-primary {
-            margin-right: $btn-spacing-right;
-        }
+    @media (max-width: 578px) {
+      height: 20rem;
     }
-
-    .stat + .stat {
-        margin-left: $stats-spacing;
-    }
-
-    .illustration {
-        padding: $space-l;
-        padding-right: 0;
-
-        &::after {
-            content: '';
-            display: inline-block;
-            position: absolute;
-            height: $blured-circle-height;
-            width: $blured-circle-height;
-            background-color: rgba(253, 126, 65, 0.28);
-            border-radius: 50%;
-            bottom: -88px;
-            right: 114px;
-            filter: blur($blur);
-        }
-    }
+  }
 }
 
 #testimonials {
-    .title {
-        text-align: center;
-        font-size: $font-size-l;
-        margin-bottom: $space-s;
-        color: $primary-color;
-    }
+  .title {
+    text-align: center;
+    font-size: $font-size-l;
+    margin-bottom: $space-s;
+    color: $primary-color;
+  }
 }
 
 #contact {
-    padding-top: 80px;
+  padding-top: 80px;
 
-    .contact-wrapper {
-        padding: $space-xxl ($base-space * 12.5);
-        background-color: $primary-color;
-        color: white;
-        border-radius: 8px;
+  @media (max-width: 996px) {
+    padding-top: 0;
+  }
 
-        h3 {
-            font-size: 2.25rem;
-            font-weight: $font-weight-bolder;
-            margin-bottom: $space-s;
-        }
+  .contact-wrapper {
+    padding: $space-xxl ($base-space * 12.5);
+    background-color: $primary-color;
+    color: white;
+    border-radius: 8px;
 
-        p {
-            font-size: $font-size-m;
-        }
-
-        .btn {
-            background-color: white;
-            color: $font-color-blue-dark;
-            font-size: $font-size-m;
-            font-weight: $font-weight-bold;
-        }
+    @media (max-width: 768px) {
+      padding: $space-l;
     }
+
+    @media (max-width: 996px) {
+      padding: 2.5rem;
+    }
+
+    h3 {
+      font-size: 2.25rem;
+      font-weight: $font-weight-bolder;
+      margin-bottom: $space-s;
+
+      @media (max-width: 768px) {
+        font-size: 1.75rem;
+      }
+    }
+
+    p {
+      font-size: $font-size-m;
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+
+    .btn {
+      background-color: white;
+      color: $font-color-blue-dark;
+      font-size: $font-size-m;
+      font-weight: $font-weight-bold;
+    }
+  }
 }

@@ -1,54 +1,68 @@
 $logo-height: 70px;
+$logo-height-mobile: 55px;
 $nav-space: $base-space * 2.5;
 $language-switch-space: $base-space * 5;
 
 nav {
-    height: fit-content;
-    padding-top: $space-l;
-    padding-bottom: $space-l;
-    background-color: white;
+  height: fit-content;
+  padding-top: $space-l;
+  padding-bottom: $space-l;
+  background-color: white;
 
-    .logo {
-        height: $logo-height;
+  @media (max-width: 578px) {
+    padding-top: $space-s;
+    padding-bottom: $space-s;
+  }
+
+  .logo {
+    height: $logo-height;
+
+    @media (max-width: 578px) {
+      height: $logo-height-mobile;
+    }
+  }
+
+  // .navigation-items {
+  //     ul {
+  //         padding-top: $nav-space;
+  //         padding-bottom: $nav-space;
+
+  //         li + li {
+  //             margin-left: $space-l;
+  //         }
+
+  //         li {
+  //             list-style: none;
+
+  //             a {
+  //                 color: $font-color-blue-dark;
+  //                 font-size: $font-size-m;
+  //                 line-height: 178%;
+  //                 font-weight: $font-weight-regular;
+  //                 text-decoration: none;
+
+  //                 &:hover {
+  //                     font-weight: $font-weight-bolder;
+  //                 }
+
+  //                 &.active {
+  //                     font-weight: $font-weight-bolder;
+  //                 }
+  //             }
+  //         }
+  //     }
+  // }
+
+  .language-switch {
+    margin-right: $language-switch-space;
+
+    @media (max-width: 578px) {
+      margin-right: 0.5rem;
     }
 
-    .navigation-items {
-        ul {
-            padding-top: $nav-space;
-            padding-bottom: $nav-space;
-
-            li + li {
-                margin-left: $space-l;
-            }
-
-            li {
-                list-style: none;
-                
-                a {
-                    color: $font-color-blue-dark;
-                    font-size: $font-size-m;
-                    line-height: 178%;
-                    font-weight: $font-weight-regular;
-                    text-decoration: none;
-
-                    &:hover {
-                        font-weight: $font-weight-bolder;
-                    }
-
-                    &.active {
-                        font-weight: $font-weight-bolder;
-                    }
-                }
-            }
-        }
+    select {
+      background-color: transparent;
+      border: none;
     }
-
-    .language-switch {
-        margin-right: $language-switch-space;
-
-        select {
-            background-color: transparent;
-            border: none;
-        }
-    }
+  }
 }
