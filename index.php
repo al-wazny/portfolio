@@ -17,6 +17,7 @@
 <body id="bootstrap-overrides">
     <?= navigation(); ?>
     <main>
+        <!-- <?= var_dump($translation) ?> -->
         <section class="hidden" id="introduction">
             <div class="container">
                 <div class="row">
@@ -65,21 +66,21 @@
                         'Graphic Design',
                         'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
                     ); 
-                    service(
-                        "../../assets/icons/Group.png",
-                        'Web development',
-                        'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
-                    ); 
-                    service(
-                        "../../assets/icons/Group(1).png",
-                        'Website Hosting',
-                        'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
-                    );
-                    service(
-                        "../../assets/icons/Grafich Design.png",
-                        'Graphic Design',
-                        'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
-                    ); 
+                    // service(
+                    //     "../../assets/icons/Group.png",
+                    //     'Web development',
+                    //     'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
+                    // ); 
+                    // service(
+                    //     "../../assets/icons/Group(1).png",
+                    //     'Website Hosting',
+                    //     'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
+                    // );
+                    // service(
+                    //     "../../assets/icons/Grafich Design.png",
+                    //     'Graphic Design',
+                    //     'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
+                    // ); 
                     ?>
                 </div>
             </div>

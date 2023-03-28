@@ -9,27 +9,40 @@
   transform: translateY(0);
 }
 
-#introduction.hidden {
-  opacity: 0;
-  transition: all 2s;
+@media (min-width: 768px) {
+  #introduction.hidden {
+    opacity: 0;
+    transition: all 2s;
+  }
+  #introduction.hidden .col-lg-6 {
+    transition: all 2s;
+  }
+  #introduction.hidden .col-lg-6:first-of-type {
+    transform: translateX(-100px);
+  }
+  #introduction.hidden .col-lg-6:last-of-type {
+    transform: translateX(100px);
+  }
+  #introduction.show {
+    opacity: 1;
+  }
+  #introduction.show .col-lg-6:first-of-type {
+    transform: translateX(0);
+  }
+  #introduction.show .col-lg-6:last-of-type {
+    transform: translateX(0);
+  }
 }
-#introduction.hidden .col-lg-6 {
-  transition: all 2s;
-}
-#introduction.hidden .col-lg-6:first-of-type {
-  transform: translateX(-100px);
-}
-#introduction.hidden .col-lg-6:last-of-type {
-  transform: translateX(100px);
-}
-#introduction.show {
-  opacity: 1;
-}
-#introduction.show .col-lg-6:first-of-type {
-  transform: translateX(0);
-}
-#introduction.show .col-lg-6:last-of-type {
-  transform: translateX(0);
+@media (max-width: 768px) {
+  #introduction.hidden {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 2s;
+  }
+  #introduction.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .grid {
@@ -79,7 +92,7 @@
 .testimonial-wrapper .testimonial-footer .author {
   font-size: 1.125rem;
   font-weight: 500;
-  color: #17171F;
+  color: #17171f;
   text-align: start;
 }
 .testimonial-wrapper .testimonial-footer .company,
@@ -87,7 +100,7 @@
   color: #414142;
 }
 .testimonial-wrapper .testimonial-footer .rating .checked {
-  color: #BE3144;
+  color: #be3144;
 }
 
 .stat h3,
@@ -98,7 +111,7 @@
   line-height: 133%;
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: #17171F;
+  color: #17171f;
 }
 @media (max-width: 768px) {
   .stat h3 {
@@ -128,7 +141,7 @@
 }
 .service h4 {
   margin-bottom: 1rem;
-  color: #17171F;
+  color: #17171f;
   font-weight: 600;
 }
 @media (max-width: 568px) {
@@ -152,7 +165,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #17171F;
+  color: #17171f;
 }
 @media (max-width: 568px) {
   .project-wrapper .project-name {
@@ -168,7 +181,7 @@ section {
 }
 section h2 {
   text-align: center;
-  color: #1A2033;
+  color: #1a2033;
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 4rem;
@@ -189,7 +202,7 @@ section h2 {
 }
 #introduction .intro {
   font-size: 1.125rem;
-  color: #BE3144;
+  color: #be3144;
 }
 #introduction .intro::before {
   content: "";
@@ -206,7 +219,7 @@ section h2 {
   font-weight: 600;
   font-size: 3.5rem;
   line-height: 143%;
-  color: #1A2033;
+  color: #1a2033;
   margin-bottom: 1.5rem;
 }
 @media (max-width: 768px) {
@@ -217,7 +230,7 @@ section h2 {
 #introduction .agency-description {
   line-height: 178%;
   font-size: 1.125rem;
-  color: #3B4159;
+  color: #3b4159;
 }
 @media (max-width: 996px) {
   #introduction .agency-description {
@@ -275,7 +288,7 @@ section h2 {
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #BE3144;
+  color: #be3144;
 }
 
 #contact {
@@ -288,7 +301,7 @@ section h2 {
 }
 #contact .contact-wrapper {
   padding: 4rem 6.25rem;
-  background-color: #BE3144;
+  background-color: #be3144;
   color: white;
   border-radius: 8px;
 }
@@ -322,7 +335,7 @@ section h2 {
 }
 #contact .contact-wrapper .btn {
   background-color: white;
-  color: #17171F;
+  color: #17171f;
   font-size: 1.125rem;
   font-weight: 500;
 }
@@ -352,18 +365,21 @@ nav .logo {
 nav .language-switch {
   margin-right: 2.5rem;
 }
+nav .language-switch form {
+  margin-bottom: 0;
+}
 @media (max-width: 578px) {
-  nav .language-switch {
+  nav .language-switch form {
     margin-right: 0.5rem;
   }
 }
-nav .language-switch select {
+nav .language-switch form select {
   background-color: transparent;
   border: none;
 }
 
 footer {
-  background-color: #1A2033;
+  background-color: #1a2033;
   color: white;
   padding-top: 4rem;
   padding-bottom: 3.5rem;
@@ -424,27 +440,27 @@ footer .contact-col .social-media svg:first-of-type {
   }
 }
 #bootstrap-overrides .btn-primary {
-  background-color: #BE3144;
-  border-color: #BE3144;
+  background-color: #be3144;
+  border-color: #be3144;
   color: white;
 }
 #bootstrap-overrides .btn-primary:hover {
   background-color: white;
-  color: #BE3144;
+  color: #be3144;
 }
 #bootstrap-overrides .btn-primary:focus {
   box-shadow: none;
 }
 #bootstrap-overrides .btn-primary:active {
-  background-color: #BE3144;
+  background-color: #be3144;
   color: white;
 }
 #bootstrap-overrides .btn-outline-dark {
-  color: #3B4159;
-  border-color: #3B4159;
+  color: #3b4159;
+  border-color: #3b4159;
 }
 #bootstrap-overrides .btn-outline-dark:hover {
-  background-color: #3B4159;
+  background-color: #3b4159;
   color: white;
 }
 #bootstrap-overrides .card {
@@ -453,12 +469,9 @@ footer .contact-col .social-media svg:first-of-type {
   border: none;
 }
 #bootstrap-overrides .swiper-pagination-bullet-active {
-  background-color: #BE3144;
+  background-color: #be3144;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-}
-body * {
-  box-sizing: border-box;
 }/*# sourceMappingURL=index.css.map */

@@ -1,9 +1,10 @@
 $blur: 250px;
 $blured-circle-height: 267px;
-$agency-desc-spacing-bottom: $base-space * 5;
 $btn-spacing-right: $base-space * 2.5;
 $stats-spacing: $base-space * 9;
 $introduction-spacing-top: 82px;
+$illustration-small: 20rem;
+$illustration-medium: 25rem;
 
 section {
   margin: 120px 0;
@@ -63,7 +64,7 @@ section {
     color: $second-secondary-color;
 
     @media (max-width: 996px) {
-      margin-bottom: $agency-desc-spacing-bottom;
+      margin-bottom: $space-md-xl;
     }
   }
 
@@ -79,12 +80,12 @@ section {
     margin-left: $stats-spacing;
 
     @media (max-width: 996px) {
-      margin-left: 2.5rem;
+      margin-left: $space-md-xl;
     }
 
     @media (max-width: 768px) {
       margin-left: 0;
-      margin-top: 0.5rem;
+      margin-top: $space-xs;
     }
   }
 
@@ -106,11 +107,11 @@ section {
     }
 
     @media (max-width: 996px) {
-      height: 25rem;
+      height: $illustration-medium;
     }
 
     @media (max-width: 578px) {
-      height: 20rem;
+      height: $illustration-small;
     }
   }
 }
@@ -142,7 +143,7 @@ section {
     }
 
     @media (max-width: 996px) {
-      padding: 2.5rem;
+      padding: $space-md-xl;
     }
 
     h3 {
@@ -159,7 +160,7 @@ section {
       font-size: $font-size-m;
 
       @media (max-width: 768px) {
-        font-size: 1rem;
+        font-size: $font-size-s;
       }
     }
 

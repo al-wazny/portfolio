@@ -14,7 +14,7 @@ $project-space: $base-space * 0.75;
     color: $font-color-blue-dark;
 
     @media (max-width: 568px) {
-      font-size: 1.25rem;
+      font-size: $font-size-sm-md;
     }
   }
   .project-description {

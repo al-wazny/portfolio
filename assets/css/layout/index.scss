@@ -1,3 +1,5 @@
+$card-max-width: 340px;
+
 #bootstrap-overrides {
   .btn {
     padding: calc($space-s - 2px) $space-m;
@@ -38,7 +40,7 @@
   }
 
   .card {
-    max-width: 340px;
+    max-width: $card-max-width;
     padding: $space-m;
     border: none;
   }

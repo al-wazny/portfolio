@@ -1,17 +1,18 @@
 // spacings
-$base-space: .5rem; //8px
+$base-space: 0.5rem; //8px
 $space-xs: $base-space; //8px
 $space-s: $base-space * 2; //16px
 $space-m: $base-space * 3; //24px
 $space-l: $base-space * 4; //32px
+$space-md-xl: $base-space * 5; //40px
 $space-xl: $base-space * 7; //56px
 $space-xxl: $base-space * 8; //64px
 $space-xxxl: $base-space * 12; //96px
 
 // colors
-$primary-color: #BE3144;
-$first-secondary-color: #1A2033;
-$second-secondary-color: #3B4159;
+$primary-color: #be3144;
+$first-secondary-color: #1a2033;
+$second-secondary-color: #3b4159;
 
 // typography
 // weight
@@ -23,8 +24,9 @@ $font-weight-bolder: 600;
 $font-size-base: 1rem;
 $font-size-s: $font-size-base;
 $font-size-m: $font-size-base * 1.125; //18px
+$font-size-sm-md: $font-size-base * 1.25; //20px
 $font-size-l: $font-size-base * 1.5; //24px
 
 // color
-$font-color-blue-dark: #17171F;
+$font-color-blue-dark: #17171f;
 $font-color-grey: #414142;

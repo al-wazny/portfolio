@@ -1,4 +1,5 @@
-<?php function navigation() { ?>
+<?php function navigation() { 
+    $isEnglish = $_COOKIE['langID'] == "en-GB" ? true : false; ?>
     <nav class="w-100 d-flex justify-content-between px-2 px-sm-3 px-md-4 px-lg-5">
         <div class="my-auto">
             <img class="logo" src="../../assets/img/Selection_002.png" alt="">
@@ -12,11 +13,13 @@
             </ul>
         </div> -->
         <div class="d-flex align-items-center">
-            <div class="language-switch">       
-                <select name="language" id="language">
-                    <option value="deutsch">DE</option>
-                    <option value="english">EN</option>
-                </select>
+            <div class="language-switch">
+                <form method="get">
+                    <select name="language" id="language" onchange="this.form.submit()">
+                        <option value="de-DE">DE</option>
+                        <option <?= $isEnglish ? 'selected' : '' ?> value="en-GB">EN</option>
+                    </select>
+                </form>    
             </div>
             <a class="btn btn-primary" href="#">Get a Quote</a>
         </div>

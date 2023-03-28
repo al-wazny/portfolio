@@ -56,13 +56,17 @@ nav {
   .language-switch {
     margin-right: $language-switch-space;
 
-    @media (max-width: 578px) {
-      margin-right: 0.5rem;
-    }
+    form {
+      margin-bottom: 0;
 
-    select {
-      background-color: transparent;
-      border: none;
+      @media (max-width: 578px) {
+        margin-right: $space-xs;
+      }
+
+      select {
+        background-color: transparent;
+        border: none;
+      }
     }
   }
 }

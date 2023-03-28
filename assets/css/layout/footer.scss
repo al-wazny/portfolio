@@ -1,80 +1,74 @@
 $footer-icon-contact-size: 20px;
 $footer-icon-social-media-size: 36px;
 
-footer { 
-    background-color: $first-secondary-color;
-    color: white;
-    padding-top: $space-xxl;
-    padding-bottom: $space-xl;
+footer {
+  background-color: $first-secondary-color;
+  color: white;
+  padding-top: $space-xxl;
+  padding-bottom: $space-xl;
 
-    img {
-        margin-bottom: $space-m;
+  img {
+    margin-bottom: $space-m;
+  }
+
+  h3 {
+    font-size: $font-size-l;
+    font-weight: $font-weight-bold;
+    margin-bottom: $space-m;
+  }
+
+  .services-col {
+    ul {
+      list-style: none;
+
+      li {
+        margin-bottom: $space-s;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .contact-col {
+    h3,
+    .email,
+    .social-media > p {
+      margin-bottom: $space-m;
     }
 
-    h3 {
-        font-size: $font-size-l;
-        font-weight: $font-weight-bold;
-        margin-bottom: $space-m;
+    .whats-app,
+    .email {
+      svg {
+        height: $footer-icon-contact-size;
+        width: $footer-icon-contact-size;
+      }
+
+      p {
+        display: inline;
+        margin-left: $space-xs;
+      }
     }
 
-    .services-col {
-        // padding-left: $space-l;
-        
-        // @media (min-width: 992px) {
-        //     padding-left: $space-xxxl;
-        // }
-
-        ul {
-            list-style: none;
-
-            li {
-                margin-bottom: $space-s;
-
-                a {
-                    color: white;
-                    text-decoration: none;
-                }
-            }
-        }
+    .whats-app {
+      margin-bottom: $space-s;
     }
 
-    .contact-col {
-        h3,
-        .email,
-        .social-media > p {
-            margin-bottom: $space-m;
+    .social-media {
+      a {
+        color: white;
+      }
+
+      svg {
+        width: $footer-icon-social-media-size;
+        height: $footer-icon-social-media-size;
+
+        &:first-of-type {
+          margin-right: $space-s;
         }
-
-        .whats-app,
-        .email {
-            svg {
-                height: $footer-icon-contact-size;
-                width: $footer-icon-contact-size;
-            }
-
-            p {
-                display: inline;
-                margin-left: $space-xs;
-            }
-        }
-
-        .whats-app {
-            margin-bottom: $space-s;
-        }
-
-        .social-media {
-            a {
-                color: white;
-            }
-            
-            svg {
-                width: $footer-icon-social-media-size;
-                height: $footer-icon-social-media-size;
-
-                &:first-of-type {
-                    margin-right: $space-s;
-                }
-            }
-        }
+      }
     }
+  }
 }
