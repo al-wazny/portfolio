@@ -1,7 +1,8 @@
 $project-space: $base-space * 0.75;
 
 .project-wrapper {
-  margin: $project-space;
+  margin: auto;
+  width: fit-content;
 
   img {
     margin-bottom: $space-m;

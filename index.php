@@ -22,18 +22,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-6 text-center text-lg-left">
-                        <p class="intro">A trusted digital agency</p>
-                        <h1>Digital Product Design Agency</h1>
-                        <p class="agency-description mb-4">Octave are a web design agency, creating beautiful, fast and effective websites for new and established businesses.</p>
+                        <p class="intro"><?= $translation->introduction->intro ?></p>
+                        <h1><?= $translation->introduction->title ?></h1>
+                        <p class="agency-description mb-4"><?= $translation->introduction->description ?></p>
                         <div class="btn-area d-flex justify-content-center justify-content-lg-start">
-                            <a class="btn btn-primary">Our Work</a>
-                            <a class="btn btn-outline-dark">Our Services</a>
+                            <a class="btn btn-primary"><?= $translation->introduction->ourWork ?></a>
+                            <a class="btn btn-outline-dark"><?= $translation->introduction->ourServices ?></a>
                         </div>
                         <div class="stats d-flex flex-column flex-md-row justify-content-center justify-content-lg-start">
                             <?= 
-                            experienceStat(10, "Years experience");
-                            experienceStat(96, "Satisfied Clients");
-                            experienceStat(99, "Projects Completed"); 
+                            experienceStat(10, $translation->introduction->yearsExperience);
+                            experienceStat(96, $translation->introduction->satisfiedClients);
+                            experienceStat(99, $translation->introduction->projectsCompleted); 
                             ?>
                         </div>
                     </div>
@@ -47,24 +47,24 @@
         </section>
         
         <section class="hidden" id="services">
-            <h2>Our Services</h2>
+            <h2><?= $translation->services->title ?></h2>
             <div class="container">
-                <div class="grid">
+                <div class="row">
                     <?= 
                     service(
                         '../../assets/icons/Grafich Design.png',
-                        "Website Hosting",
-                        'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
+                        $translation->services->hosting,
+                        $translation->services->hostingDescription
                     );
                     service(
                         "../../assets/icons/011-logo.png",
-                        'Automation',
-                        'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
+                        $translation->services->automation,
+                        $translation->services->automationDescription
                     );
                     service(
                         "../../assets/icons/039-branding.png",
-                        'Graphic Design',
-                        'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
+                        $translation->services->design,
+                        $translation->services->designDescription
                     ); 
                     // service(
                     //     "../../assets/icons/Group.png",
@@ -88,8 +88,8 @@
 
         <section class="hidden" id="projects">
             <div class="container">
-                <h2>Our recent Projects</h2>
-                <div class="grid">
+                <h2><?= $translation->projects->title ?></h2>
+                <div class="row">
                     <?=
                     project(
                         '../../assets/img/Rectangle 4401(1).png',
@@ -129,8 +129,8 @@
 
         <section class="hidden swiper-cpagination" id="testimonials">
             <div class="container">
-                <p class="title">Testimonials</p>
-                <h2>What Our Clients Say About Us</h2>
+                <p class="title"><?= $translation->testimonials->intro ?></p>
+                <h2><?= $translation->testimonials->title ?></h2>
                 <div class="swiper-container swiper-container-horizontal loco_listing__carousel" data-slides-per-view="3" data-space-between="30" data-loop="true" data-click="false" data-spvxs="1" data-center-xs-slide="true" data-spvsm="auto" data-spvmd="2" data-spvlg="3" data-spvxl="3" data-dynamic-bullets="true" data-free-mode="true">
                     <div class="swiper-wrapper pb-5">
                         <?= 
@@ -194,8 +194,8 @@
             <div class="container">
                 <div class="contact-wrapper row">
                     <div class="col-12 col-md-9 text-center text-md-left mb-2 mb-md-0">
-                        <h3>Let's work together</h3>
-                        <p>We're a team of non-cynics who truly care for our work.</p>
+                        <h3><?= $translation->contact->workTogether ?></h3>
+                        <p><?= $translation->contact->teamDescription ?></p>
                     </div>
                     <div class="col-12 col-md-3 d-flex justify-content-center align-items-center">
                         <a class="btn" href="#">Get A Quote</a>
@@ -205,7 +205,7 @@
         </section>
     </main>
 
-    <?= footer() ?>
+    <?= footer($translation) ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>

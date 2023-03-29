@@ -155,7 +155,10 @@
 }
 
 .project-wrapper {
-  margin: 0.375rem;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .project-wrapper img {
   margin-bottom: 1.5rem;
