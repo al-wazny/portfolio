@@ -12,11 +12,11 @@
   "services": {
     "title": "Our Services",
     "hosting": "Website Hosting",
-    "hostingDescription": "Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis mei Mei an pericula euripidis.",
+    "hostingDescription": "We provide cloud-based hosting for maximum uptime and performance, leaving you free to focus on your business.",
     "automation": "Automation",
-    "automationDescription": "Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis mei Mei an pericula euripidis.",
-    "design": "Graphic Design",
-    "designDescription": "Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis mei Mei an pericula euripidis."
+    "automationDescription": "We automate services such as workflow automation to streamline business operations and boost efficiency. ",
+    "development": "Web development",
+    "developmentDescription": "We deliver custom, responsive, and secure websites optimized for performance and user experience."
   },
   "projects": {
     "title": "Our recent Projects"
@@ -30,6 +30,6 @@
     "teamDescription": "We're a team of non-cynics who truly care for our work."
   },
   "footer": {
-    "agencyDescription": "OurStudio is a digital agency UI / UX Design and Website Development located in Ohio, United States of America"
+    "agencyDescription": "We are a digital agency offering web development, graphic design, and automation services. Our experienced team delivers innovative solutions tailored to your unique needs."
   }
 }

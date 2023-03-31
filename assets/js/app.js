@@ -14,29 +14,29 @@ const hiddenElements = document.querySelectorAll(".hidden");
 
 hiddenElements.forEach((element) => observer.observe(element));
 
-const counters = document.querySelectorAll(".count");
-const speed = 100;
+// const counters = document.querySelectorAll(".count");
+// const speed = 100;
 
-counters.forEach((counter) => {
-  counter.setAttribute("data", counter.innerText);
-  counter.innerText = 0;
+// counters.forEach((counter) => {
+//   counter.setAttribute("data", counter.innerText);
+//   counter.innerText = 0;
 
-  const animate = () => {
-    const value = +counter.getAttribute("data");
-    const data = +counter.innerText;
+//   const animate = () => {
+//     const value = +counter.getAttribute("data");
+//     const data = +counter.innerText;
 
-    const time = value / speed;
+//     const time = value / speed;
 
-    if (data < value) {
-      counter.innerText = Math.ceil(data + time);
-      setTimeout(animate, 10);
-    } else {
-      counter.innerText = value + "+";
-    }
-  };
+//     if (data < value) {
+//       counter.innerText = Math.ceil(data + time);
+//       setTimeout(animate, 10);
+//     } else {
+//       counter.innerText = value + "+";
+//     }
+//   };
 
-  animate();
-});
+//   animate();
+// });
 
 jQuery(document).ready(function () {
   jQuery(".swiper-container").each(function () {

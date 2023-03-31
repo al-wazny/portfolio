@@ -20,17 +20,17 @@
                     <div class="contact-info">
                         <div class="whats-app">
                             <i class="fa-brands fa-whatsapp"></i>
-                            <p>0000000000</p>
+                            <p>+49 178 5792020</p>
                         </div>
                         <div class="email">
                             <i class="fa-regular fa-envelope"></i>
-                            <p>lalwazny@wishfulgoods.com</p>
+                            <p>lalwazny@gmail.com</p>
                         </div>
-                        <div class="social-media">
+                        <!-- <div class="social-media">
                             <p>Follow Us</p>
                             <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
                             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

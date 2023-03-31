@@ -17,7 +17,6 @@
 <body id="bootstrap-overrides">
     <?= navigation(); ?>
     <main>
-        <!-- <?= var_dump($translation) ?> -->
         <section class="hidden" id="introduction">
             <div class="container">
                 <div class="row">
@@ -29,13 +28,13 @@
                             <a class="btn btn-primary"><?= $translation->introduction->ourWork ?></a>
                             <a class="btn btn-outline-dark"><?= $translation->introduction->ourServices ?></a>
                         </div>
-                        <div class="stats d-flex flex-column flex-md-row justify-content-center justify-content-lg-start">
+                        <!-- <div class="stats d-flex flex-column flex-md-row justify-content-center justify-content-lg-start">
                             <?= 
-                            experienceStat(10, $translation->introduction->yearsExperience);
+                            experienceStat("4", $translation->introduction->yearsExperience);
                             experienceStat(96, $translation->introduction->satisfiedClients);
-                            experienceStat(99, $translation->introduction->projectsCompleted); 
+                            experienceStat("16+", $translation->introduction->projectsCompleted); 
                             ?>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="col-12 col-lg-6">
                         <div class="illustration d-flex justify-content-center p-0 mt-5 mt-lg-0">
@@ -52,35 +51,20 @@
                 <div class="row">
                     <?= 
                     service(
-                        '../../assets/icons/Grafich Design.png',
+                        "../../assets/icons/Group.png",
+                        $translation->services->development,
+                        $translation->services->developmentDescription
+                    );
+                    service(
+                        "../../assets/icons/011-logo.png",
                         $translation->services->hosting,
                         $translation->services->hostingDescription
                     );
                     service(
-                        "../../assets/icons/011-logo.png",
+                        "../../assets/icons/039-branding.png",
                         $translation->services->automation,
                         $translation->services->automationDescription
                     );
-                    service(
-                        "../../assets/icons/039-branding.png",
-                        $translation->services->design,
-                        $translation->services->designDescription
-                    ); 
-                    // service(
-                    //     "../../assets/icons/Group.png",
-                    //     'Web development',
-                    //     'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
-                    // ); 
-                    // service(
-                    //     "../../assets/icons/Group(1).png",
-                    //     'Website Hosting',
-                    //     'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
-                    // );
-                    // service(
-                    //     "../../assets/icons/Grafich Design.png",
-                    //     'Graphic Design',
-                    //     'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis  mei Mei an pericula euripidis.'
-                    // ); 
                     ?>
                 </div>
             </div>
@@ -198,7 +182,7 @@
                         <p><?= $translation->contact->teamDescription ?></p>
                     </div>
                     <div class="col-12 col-md-3 d-flex justify-content-center align-items-center">
-                        <a class="btn" href="#">Get A Quote</a>
+                        <a class="btn" href="mailto:lalwazny@gmail.com">Get A Quote</a>
                     </div>
                 </div>
             </div>
