@@ -24,7 +24,7 @@
                         </div>
                         <div class="email">
                             <i class="fa-regular fa-envelope"></i>
-                            <p>lalwazny@gmail.com</p>
+                            <p>support@wishfulgoods.eu</p>
                         </div>
                         <!-- <div class="social-media">
                             <p>Follow Us</p>
