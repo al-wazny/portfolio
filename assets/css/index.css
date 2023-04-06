@@ -309,6 +309,11 @@ section h2 {
   color: white;
   border-radius: 8px;
 }
+@media (max-width: 576px) {
+  #contact .contact-wrapper {
+    border-radius: 0;
+  }
+}
 @media (max-width: 768px) {
   #contact .contact-wrapper {
     padding: 2rem;

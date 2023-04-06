@@ -1,3 +1,35 @@
 {
-  "blub": "ich cool"
+  "introduction": {
+    "intro": "A trusted digital agency",
+    "title": "Agentur für digitales Produktdesign",
+    "description": "Wishfulgoods ist eine Webdesign-Agentur, die schöne, schnelle und effektive Websites für neue und etablierte Unternehmen erstellt.",
+    "ourWork": "Unsere Arbeit",
+    "ourServices": "Unsere Services",
+    "yearsExperience": "Years Experience",
+    "satisfiedClients": "Satisfied Clients",
+    "projectsCompleted": "Projects Completed"
+  },
+  "services": {
+    "title": "Unsere Services",
+    "hosting": "Website Hosting",
+    "hostingDescription": "Wir bieten Cloud-basiertes Hosting für maximale Verfügbarkeit und Leistung, sodass Sie sich auf Ihr Geschäft konzentrieren können.",
+    "automation": "Automation",
+    "automationDescription": "Wir bieten Services zur Automatisierung wie Workflow-Automatisierung, um Geschäftsabläufe zu rationalisieren und die Effizienz zu steigern.",
+    "development": "Web entwicklung",
+    "developmentDescription": "Wir liefern benutzerdefinierte, responsive und sichere Websites, die für Leistung und Benutzererfahrung optimiert sind."
+  },
+  "projects": {
+    "title": "Unsere letzten Projekte"
+  },
+  "testimonials": {
+    "intro": "Referenzen",
+    "title": "Was unsere Kunden über uns sagen"
+  },
+  "contact": {
+    "workTogether": "Lass uns zusammen arbeiten",
+    "teamDescription": "Wir sind ein Team von Nichtzynikern, die sich um die Bedürfnisse ihrer Kunden kümmern"
+  },
+  "footer": {
+    "agencyDescription": "Wir sind eine digitale Agentur, die Webentwicklung, Grafikdesign und Automatisierungsdienste anbietet. Unser erfahrenes Team liefert innovative Lösungen, die auf Ihre individuellen Bedürfnisse zugeschnitten sind."
+  }
 }

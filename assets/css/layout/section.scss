@@ -138,6 +138,10 @@ section {
     color: white;
     border-radius: 8px;
 
+    @media (max-width: 576px) {
+      border-radius: 0;
+    }
+
     @media (max-width: 768px) {
       padding: $space-l;
     }
