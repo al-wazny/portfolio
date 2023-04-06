@@ -380,6 +380,7 @@ nav .language-switch form {
 nav .language-switch form select {
   background-color: transparent;
   border: none;
+  color: black;
 }
 
 footer {
@@ -478,4 +479,5 @@ footer .contact-col .social-media svg:first-of-type {
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: white;
 }/*# sourceMappingURL=index.css.map */
