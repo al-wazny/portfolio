@@ -13,7 +13,7 @@
             </ul>
         </div> -->
         <div class="d-flex align-items-center">
-            <div class="language-switch">
+            <div class="language-switch mr-2 mr-md-3 mr-lg-4">
                 <form method="get">
                     <select name="language" id="language" onchange="this.form.submit()">
                         <option value="de-DE">DE</option>

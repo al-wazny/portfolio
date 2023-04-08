@@ -371,16 +371,8 @@ nav .logo {
     height: 55px;
   }
 }
-nav .language-switch {
-  margin-right: 2.5rem;
-}
 nav .language-switch form {
   margin-bottom: 0;
-}
-@media (max-width: 578px) {
-  nav .language-switch form {
-    margin-right: 0.5rem;
-  }
 }
 nav .language-switch form select {
   background-color: transparent;
@@ -441,6 +433,9 @@ footer .contact-col .social-media svg:first-of-type {
   margin-right: 1rem;
 }
 
+#bootstrap-overrides a {
+  color: white;
+}
 #bootstrap-overrides .btn {
   padding: calc(1rem - 2px) 1.5rem;
 }

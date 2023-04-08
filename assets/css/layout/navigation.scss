@@ -54,14 +54,8 @@ nav {
   // }
 
   .language-switch {
-    margin-right: $language-switch-space;
-
     form {
       margin-bottom: 0;
-
-      @media (max-width: 578px) {
-        margin-right: $space-xs;
-      }
 
       select {
         background-color: transparent;
