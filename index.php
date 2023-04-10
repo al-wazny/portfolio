@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An Agency Specialized in web development from Karlsruhe providing custom tailored software solutions">
+    <meta name="keywords" content="karlsruhe, software, agency, agentur, websites, webseiten, website, automation, hosting, custom, software solutions, web entwicklung, web, dev, development, high-quality service, responsive support, personalized support, modern technologie">
+    <meta name="author" content="Ali Al-Wazny">
+    <link rel="canonical" href="http://www.wishfulgoods.eu/index.php">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -38,7 +42,7 @@
                     </div>
                     <div class="col-12 col-lg-6">
                         <div class="illustration d-flex justify-content-center p-0 mt-5 mt-lg-0">
-                            <img src="./assets/img/Website designer-amico.svg" alt="">
+                            <img src="./assets/img/Website designer-amico.svg" alt="illustration for introduction section">
                         </div>
                     </div>
                 </div>
@@ -52,16 +56,19 @@
                     <?= 
                     service(
                         "../../assets/icons/Group.png",
+                        "icon to illustrate the service we're specialized in for web development",
                         $translation->services->development,
                         $translation->services->developmentDescription
                     );
                     service(
                         "../../assets/icons/011-logo.png",
+                        "icon that illustrates the given service for hosting websites on the internet",
                         $translation->services->hosting,
                         $translation->services->hostingDescription
                     );
                     service(
                         "../../assets/icons/039-branding.png",
+                        "icon to illustrate provided service for process automation sofware",
                         $translation->services->automation,
                         $translation->services->automationDescription
                     );

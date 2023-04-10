@@ -1,6 +1,6 @@
-<?php function testimonial(String $imgPath, String $testimonial, String $name, String $company, int $rating) { ?>
+<?php function testimonial(String $imgPath, String $testimonial, String $name, String $company, int $rating, String $imgAlt="client testimonial placeholder image",) { ?>
     <div class="swiper-slide testimonial-wrapper card">
-        <img class="rounded-circle" src="<?= $imgPath ?>" alt="client placeholder image">
+        <img class="rounded-circle" src="<?= $imgPath ?>" alt="<?= $imgAlt ?>">
         <p class="testimonial">
             “<?= $testimonial ?>"
         </p>
