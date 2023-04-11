@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.2.0/css/swiper.min.css">
+    <link rel="icon" href="./assets/icons/Auswahl_006.png" type="image/png">
     <title>Digital Product Agency | Wishfulgoods</title>
 </head>
 <body id="bootstrap-overrides">
@@ -29,8 +30,8 @@
                         <h1><?= $translation->introduction->title ?></h1>
                         <p class="agency-description mb-4"><?= $translation->introduction->description ?></p>
                         <div class="btn-area d-flex justify-content-center justify-content-lg-start">
-                            <a class="btn btn-primary"><?= $translation->introduction->ourWork ?></a>
-                            <a class="btn btn-outline-dark"><?= $translation->introduction->ourServices ?></a>
+                            <a href="#projects" class="btn btn-primary"><?= $translation->introduction->ourWork ?></a>
+                            <a href="#services" class="btn btn-outline-dark"><?= $translation->introduction->ourServices ?></a>
                         </div>
                         <!-- <div class="stats d-flex flex-column flex-md-row justify-content-center justify-content-lg-start">
                             <?= 
@@ -189,7 +190,7 @@
                         <p><?= $translation->contact->teamDescription ?></p>
                     </div>
                     <div class="col-12 col-md-3 d-flex justify-content-center align-items-center">
-                        <a class="btn" href="mailto:lalwazny@gmail.com">Get A Quote</a>
+                        <a class="btn" href="mailto: support@wishfulgoods.eu">Get A Quote</a>
                     </div>
                 </div>
             </div>

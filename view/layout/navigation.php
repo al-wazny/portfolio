@@ -21,7 +21,7 @@
                     </select>
                 </form>    
             </div>
-            <a class="btn btn-primary" href="#">Get a Quote</a>
+            <a class="btn btn-primary" href="mailto: support@wishfulgoods.eu">Get a Quote</a>
         </div>
     </nav>
 <?php } ?>
