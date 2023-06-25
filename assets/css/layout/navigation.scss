@@ -22,36 +22,36 @@ nav {
     }
   }
 
-  // .navigation-items {
-  //     ul {
-  //         padding-top: $nav-space;
-  //         padding-bottom: $nav-space;
+  .navigation-items {
+      ul {
+          padding-top: $nav-space;
+          padding-bottom: $nav-space;
 
-  //         li + li {
-  //             margin-left: $space-l;
-  //         }
+          li + li {
+              margin-left: $space-l;
+          }
 
-  //         li {
-  //             list-style: none;
+          li {
+              list-style: none;
 
-  //             a {
-  //                 color: $font-color-blue-dark;
-  //                 font-size: $font-size-m;
-  //                 line-height: 178%;
-  //                 font-weight: $font-weight-regular;
-  //                 text-decoration: none;
+              a {
+                  color: $font-color-blue-dark;
+                  font-size: $font-size-m;
+                  line-height: 178%;
+                  font-weight: $font-weight-regular;
+                  text-decoration: none;
 
-  //                 &:hover {
-  //                     font-weight: $font-weight-bolder;
-  //                 }
+                  &:hover {
+                      font-weight: $font-weight-bolder;
+                  }
 
-  //                 &.active {
-  //                     font-weight: $font-weight-bolder;
-  //                 }
-  //             }
-  //         }
-  //     }
-  // }
+                  &.active {
+                      font-weight: $font-weight-bolder;
+                  }
+              }
+          }
+      }
+  }
 
   .language-switch {
     form {

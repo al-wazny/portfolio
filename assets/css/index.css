@@ -369,6 +369,29 @@ nav .logo {
     height: 55px;
   }
 }
+nav .navigation-items ul {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+nav .navigation-items ul li + li {
+  margin-left: 2rem;
+}
+nav .navigation-items ul li {
+  list-style: none;
+}
+nav .navigation-items ul li a {
+  color: #17171f;
+  font-size: 1.125rem;
+  line-height: 178%;
+  font-weight: 400;
+  text-decoration: none;
+}
+nav .navigation-items ul li a:hover {
+  font-weight: 600;
+}
+nav .navigation-items ul li a.active {
+  font-weight: 600;
+}
 nav .language-switch form {
   margin-bottom: 0;
 }

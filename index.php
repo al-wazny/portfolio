@@ -21,7 +21,7 @@
 </head>
 <body id="bootstrap-overrides">
     <?= navigation(); ?>
-    <main>
+    <main id="home-page">
         <section class="hidden" id="introduction">
             <div class="container">
                 <div class="row">
