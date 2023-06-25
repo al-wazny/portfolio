@@ -379,17 +379,17 @@ nav .navigation-items ul li + li {
 nav .navigation-items ul li {
   list-style: none;
 }
-nav .navigation-items ul li a {
-  color: #17171f;
+nav .navigation-items ul li a.navigation-item {
+  color: #17171f !important;
   font-size: 1.125rem;
   line-height: 178%;
   font-weight: 400;
   text-decoration: none;
 }
-nav .navigation-items ul li a:hover {
+nav .navigation-items ul li a.navigation-item:hover {
   font-weight: 600;
 }
-nav .navigation-items ul li a.active {
+nav .navigation-items ul li a.navigation-item.active {
   font-weight: 600;
 }
 nav .language-switch form {
@@ -454,7 +454,7 @@ footer .contact-col .social-media svg:first-of-type {
   margin-right: 1rem;
 }
 
-#bootstrap-overrides a {
+#bootstrap-overrides footer a {
   color: white;
 }
 #bootstrap-overrides .btn {
@@ -496,6 +496,18 @@ footer .contact-col .social-media svg:first-of-type {
 }
 #bootstrap-overrides .swiper-pagination-bullet-active {
   background-color: #be3144;
+}
+
+#dataprotection-page h2 {
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  font-weight: bold;
+}
+#dataprotection-page h3 {
+  margin-bottom: 1rem;
+}
+#dataprotection-page h4 {
+  margin-bottom: 2rem;
 }
 
 body {

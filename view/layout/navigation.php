@@ -3,13 +3,13 @@
 
     <nav class="container w-100 d-flex justify-content-between">
         <div class="my-auto">
-            <img class="logo" src="../../assets/img/Selection_002.png" alt="">
+            <img class="logo" src="../../assets/img/Selection_002.png" alt="company logo">
         </div>
         <div class="navigation-items">
             <ul class="d-flex pl-0 m-0">
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="/imprint.php">Impressum</a></li>
-                <li><a href="/dataprotection.php">Datenschutz</a></li>
+                <li><a class="navigation-item" href="/">Home</a></li>
+                <li><a class="navigation-item" href="/imprint.php">Impressum</a></li>
+                <li><a class="navigation-item" href="/dataprotection.php">Datenschutz</a></li>
             </ul>
         </div>
         <div class="d-flex align-items-center">

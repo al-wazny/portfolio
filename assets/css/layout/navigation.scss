@@ -34,8 +34,8 @@ nav {
           li {
               list-style: none;
 
-              a {
-                  color: $font-color-blue-dark;
+              a.navigation-item {
+                  color: $font-color-blue-dark !important;
                   font-size: $font-size-m;
                   line-height: 178%;
                   font-weight: $font-weight-regular;
