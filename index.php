@@ -21,6 +21,7 @@
 </head>
 <body id="bootstrap-overrides">
     <?= navigation(); ?>
+    <h1>turn head into component and make current content (optional) default value</h1>
     <main id="home-page">
         <section class="hidden" id="introduction">
             <div class="container">

@@ -498,6 +498,10 @@ footer .contact-col .social-media svg:first-of-type {
   background-color: #be3144;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #dataprotection-page h2 {
   margin-bottom: 1rem;
   margin-top: 3rem;
@@ -508,6 +512,12 @@ footer .contact-col .social-media svg:first-of-type {
 }
 #dataprotection-page h4 {
   margin-bottom: 2rem;
+}
+#dataprotection-page a {
+  color: #be3144;
+}
+#dataprotection-page aside {
+  min-width: 300px;
 }
 
 body {

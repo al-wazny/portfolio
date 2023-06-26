@@ -18,26 +18,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.2.0/css/swiper.min.css">
     <link rel="icon" href="./assets/icons/Auswahl_006.png" type="image/png">
     <title>Digital Product Agency | Wishfulgoods</title>
-    <style>
-        #dataprotection-page > h2 {
-            margin-bottom: 1rem;
-            margin-top: 3rem;
-            font-weight: bold;
-        }
-        #dataprotection-page > h3 {
-            margin-bottom: 1rem;
-        }
-        #dataprotection-page > h4 {
-            margin-bottom: 2rem;
-        }
-    </style>
 </head>
 <body id="bootstrap-overrides">
     <?= navigation(); ?>
-    <div class="d-flex">
-        <main class="container overflow-auto" id="dataprotection-page">
+    <main class="container d-flex" id="dataprotection-page">
+        <div>
             <h1 class="mb-5">Datenschutzerklärung</h1>
-            <h2>1. Datenschutz auf einen Blick</h2>
+            <h2 id="summary">1. Datenschutz auf einen Blick</h2>
             <h3>Allgemeine Hinweise</h3>
             <p>
                 Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten
@@ -78,14 +65,14 @@
                 Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.
             </p>
     
-            <h2>2. Hosting</h2>
+            <h2 id="hosting">2. Hosting</h2>
             <p>Wir hosten die Inhalte unserer Website bei folgendem Anbieter:</p>
             <h3>IONOS</h3>
             <p>
                 Anbieter ist die IONOS SE, Elgendorfer Str. 57, 56410 Montabaur (nachfolgend IONOS). Wenn Sie unsere
                 Website besuchen, erfasst IONOS verschiedene Logfiles inklusive Ihrer IP-Adressen. Details entnehmen Sie
                 der Datenschutzerklärung von IONOS:
-                <a class="text-dark" href="https://www.ionos.de/terms-gtc/terms-privacy">https://www.ionos.de/terms-gtc/terms-privacy.</a></br></br>
+                <a href="https://www.ionos.de/terms-gtc/terms-privacy">https://www.ionos.de/terms-gtc/terms-privacy.</a></br></br>
                 Die Verwendung von IONOS erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein
                 berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website. Sofern eine
                 entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art.
@@ -94,7 +81,7 @@
                 umfasst. Die Einwilligung ist jederzeit widerrufbar.
             </p>
     
-            <h2>3. Allgemeine Hinweise und Pflichtinformationen</h2>
+            <h2 id="mandatory-information">3. Allgemeine Hinweise und Pflichtinformationen</h2>
             <h3>Datenschutz</h3>
             <p>
                 Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre
@@ -247,7 +234,7 @@
                 eines Mitgliedstaats verarbeitet werden.
             </p>
     
-            <h2>4. Datenerfassung auf dieser Website</h2>
+            <h2 id="data-collecting">4. Datenerfassung auf dieser Website</h2>
             <h3>Anfrage per E-Mail, Telefon oder Telefax</h3>
             <p>
                 Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus
@@ -265,7 +252,7 @@
                 insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.
             </p>
     
-            <h2>5. Plugins und Tools</h2>
+            <h2 id="plugin-and-tools">5. Plugins und Tools</h2>
             <h3>Font Awesome</h3>
             <p>
                 Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten und Symbolen Font Awesome. Anbieter ist
@@ -282,16 +269,20 @@
                 Wenn Ihr Browser Font Awesome nicht unterstützt, wird eine Standardschrift von Ihrem Computer genutzt.</br></br>
                 Weitere Informationen zu Font Awesome finden Sie und in der Datenschutzerklärung von Font Awesome
                 unter:</br>
-                <a class="text-dark" href="https://fontawesome.com/privacy">https://fontawesome.com/privacy.</a></br></br>
+                <a href="https://fontawesome.com/privacy">https://fontawesome.com/privacy.</a></br></br>
                 Quelle:</br>
-                <a class="text-dark" href="https://www.e-recht24.de">https://www.e-recht24.de</a>
+                <a href="https://www.e-recht24.de">https://www.e-recht24.de</a>
             </p>
-        </main>
-        <aside>
-            <ul>
-                <li>blubber</li>
+        </div>
+        <aside class="position-relative">
+            <ul class="position-fixed">
+                <li><a href="#summary">Datenschutz auf eine Blick</a></li>
+                <li><a href="#hosting">Hosting</a></li>
+                <li><a href="#mandatory-information">Allgemeine Hinweise und Plichtinformationen</a></li>
+                <li><a href="#data-collecting">Datenerfassung auf dieser Website</a></li>
+                <li><a href="#plugin-and-tools">Plugins und Tools</a></li>
             </ul>
         </aside>
-    </div>
-    <?= footer(); ?>
+    </main>
+    <?= footer($translation); ?>
 </body>

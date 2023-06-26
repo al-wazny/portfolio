@@ -1,15 +1,15 @@
-@import "./abstract/variables.scss";
-@import "./abstract/animation.scss";
-@import "./abstract/grid.scss";
-@import "./components/testimonial.scss";
-@import "./components/stat.scss";
-@import "./components/service.scss";
-@import "./components/project.scss";
-@import "./layout/section.scss";
-@import "./layout/navigation.scss";
-@import "./layout/footer.scss";
-@import "./layout/index.scss";
-@import "./page/dataprotection.scss";
+@import "./abstract/variables";
+@import "./abstract/animation";
+@import "./abstract/grid";
+@import "./components/testimonial";
+@import "./components/stat";
+@import "./components/service";
+@import "./components/project";
+@import "./layout/section";
+@import "./layout/navigation";
+@import "./layout/footer";
+@import "./layout/index";
+@import "./page/dataprotection";
 
 body {
   font-family: "Poppins", sans-serif;

@@ -9,7 +9,7 @@
             <ul class="d-flex pl-0 m-0">
                 <li><a class="navigation-item" href="/">Home</a></li>
                 <li><a class="navigation-item" href="/imprint.php">Impressum</a></li>
-                <li><a class="navigation-item" href="/dataprotection.php">Datenschutz</a></li>
+                <li><a class="navigation-item" href="/privacy-policy.php">Datenschutz</a></li>
             </ul>
         </div>
         <div class="d-flex align-items-center">
