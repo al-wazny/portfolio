@@ -27,6 +27,7 @@ hiddenElements.forEach((element) => observer.observe(element));
 const blub = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
+      console.log(entry);
       entry.target.classList.add();
     } else {
       entry.target.classList.remove();
@@ -35,7 +36,8 @@ const blub = new IntersectionObserver((entries) => {
 });
 
 const h2 = document.querySelectorAll("#dataprotection-page h2");
-h2.forEach((section) => observer.observe(section))
+console.log(h2)
+h2.forEach((section) => blub.observe(section))
 
 
 
