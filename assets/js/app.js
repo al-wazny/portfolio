@@ -14,6 +14,32 @@ const hiddenElements = document.querySelectorAll(".hidden");
 
 hiddenElements.forEach((element) => observer.observe(element));
 
+
+
+
+
+
+
+// collect every h2 inside the privacy page
+// read out their id's
+// if isIntersecting 
+// -> add class font-weight-bold to anchor with same href as id
+const blub = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add();
+    } else {
+      entry.target.classList.remove();
+    }
+  });
+});
+
+const h2 = document.querySelectorAll("#dataprotection-page h2");
+h2.forEach((section) => observer.observe(section))
+
+
+
+
 // const counters = document.querySelectorAll(".count");
 // const speed = 100;
 

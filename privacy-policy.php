@@ -22,8 +22,9 @@
 <body id="bootstrap-overrides">
     <?= navigation(); ?>
     <main class="container d-flex" id="dataprotection-page">
-        <div>
-            <h1 class="mb-5">Datenschutzerklärung</h1>
+        <div class="content">
+            <h1>Datenschutzerklärung</h1>
+            <p>Zuletzt aktualisiert:  24. Juni 2023.</p>
             <h2 id="summary">1. Datenschutz auf einen Blick</h2>
             <h3>Allgemeine Hinweise</h3>
             <p>
@@ -276,7 +277,7 @@
         </div>
         <aside class="position-relative">
             <ul class="position-fixed">
-                <li><a href="#summary">Datenschutz auf eine Blick</a></li>
+                <li><a href="#summary">Datenschutz auf einen Blick</a></li>
                 <li><a href="#hosting">Hosting</a></li>
                 <li><a href="#mandatory-information">Allgemeine Hinweise und Plichtinformationen</a></li>
                 <li><a href="#data-collecting">Datenerfassung auf dieser Website</a></li>

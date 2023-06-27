@@ -498,7 +498,7 @@ footer .contact-col .social-media svg:first-of-type {
   background-color: #be3144;
 }
 
-html {
+html:has(#dataprotection-page) {
   scroll-behavior: smooth;
 }
 
@@ -517,7 +517,18 @@ html {
   color: #be3144;
 }
 #dataprotection-page aside {
-  min-width: 300px;
+  min-width: 25%;
+}
+#dataprotection-page aside ul {
+  list-style: none;
+}
+#dataprotection-page aside ul li {
+  padding-top: 0.75em;
+  margin-top: 0.75em;
+  font-size: 0.875rem;
+}
+#dataprotection-page aside ul li + li {
+  border-top: 1px solid black;
 }
 
 body {
