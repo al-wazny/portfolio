@@ -21,12 +21,12 @@
 </head>
 <body id="bootstrap-overrides">
     <?= navigation(); ?>
-    <main class="container d-flex" id="dataprotection-page">
+    <main class="container d-flex my-5" id="dataprotection-page">
         <div class="content">
             <h1>Datenschutzerklärung</h1>
             <p>Zuletzt aktualisiert:  24. Juni 2023.</p>
            
-            <section id="summary">
+            <section class="mt-5" id="summary">
                 <h2>1. Datenschutz auf einen Blick</h2>
                 <h3>Allgemeine Hinweise</h3>
                 <p>

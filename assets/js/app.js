@@ -1,3 +1,4 @@
+// for the fading in section on the landing page
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -9,11 +10,29 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 });
-
 const hiddenElements = document.querySelectorAll(".hidden");
-
 hiddenElements.forEach((element) => observer.observe(element));
 
+// for the page section navigaton on the privacy policy page
+const blub = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      var element = document.querySelector(
+        `aside a[href="#${entry.target.id}"]`
+      );
+      if (entry.isIntersecting) {
+        element.classList.add("font-weight-bold");
+      } else {
+        element.classList.remove("font-weight-bold");
+      }
+    });
+  },
+  { rootMargin: "-450px" }
+);
+const privacySections = document.querySelectorAll(
+  "#dataprotection-page section"
+);
+privacySections.forEach((section) => blub.observe(section));
 
 // const counters = document.querySelectorAll(".count");
 // const speed = 100;
@@ -39,6 +58,7 @@ hiddenElements.forEach((element) => observer.observe(element));
 //   animate();
 // });
 
+// carousel slider for the testimonials
 jQuery(document).ready(function () {
   jQuery(".swiper-container").each(function () {
     var swiperThis = jQuery(this);
@@ -59,7 +79,7 @@ jQuery(document).ready(function () {
         observer: true,
         observeParents: true,
         spaceBetween: swiperThis.data("space-between"),
-        loop: swiperThis.data("loop"),
+        // loop: swiperThis.data("loop"),
         clickable: swiperThis.data("click"),
         centeredSlides: swiperThis.data("center-slide"),
         freeMode: swiperThis.data("free-mode"),
