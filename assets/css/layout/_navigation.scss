@@ -17,40 +17,40 @@ nav {
   .logo {
     height: $logo-height;
 
-    @media (max-width: 578px) {
+    @media (max-width: 992px) {
       height: $logo-height-mobile;
     }
   }
 
   .navigation-items {
-      ul {
-          padding-top: $nav-space;
-          padding-bottom: $nav-space;
+    ul {
+      padding-top: $nav-space;
+      padding-bottom: $nav-space;
 
-          li + li {
-              margin-left: $space-l;
-          }
-
-          li {
-              list-style: none;
-
-              a.navigation-item {
-                  color: $font-color-blue-dark !important;
-                  font-size: $font-size-m;
-                  line-height: 178%;
-                  font-weight: $font-weight-regular;
-                  text-decoration: none;
-
-                  &:hover {
-                      font-weight: $font-weight-bolder;
-                  }
-
-                  &.active {
-                      font-weight: $font-weight-bolder;
-                  }
-              }
-          }
+      li + li {
+        margin-left: $space-l;
       }
+
+      li {
+        list-style: none;
+
+        a.navigation-item {
+          color: $font-color-blue-dark !important;
+          font-size: $font-size-m;
+          line-height: 178%;
+          font-weight: $font-weight-regular;
+          text-decoration: none;
+
+          &:hover {
+            font-weight: $font-weight-bolder;
+          }
+
+          &.active {
+            font-weight: $font-weight-bolder;
+          }
+        }
+      }
+    }
   }
 
   .language-switch {

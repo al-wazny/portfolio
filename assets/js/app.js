@@ -79,7 +79,7 @@ jQuery(document).ready(function () {
         observer: true,
         observeParents: true,
         spaceBetween: swiperThis.data("space-between"),
-        // loop: swiperThis.data("loop"),
+        // loop: swiperThis.data("loop"), 
         clickable: swiperThis.data("click"),
         centeredSlides: swiperThis.data("center-slide"),
         freeMode: swiperThis.data("free-mode"),
