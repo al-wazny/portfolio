@@ -1,12 +1,12 @@
-$logo-height: 70px;
-$logo-height-mobile: 55px;
+$logo-height: 55px;
+$logo-height-mobile: 42px;
 $nav-space: $base-space * 2.5;
 $language-switch-space: $base-space * 5;
 
 nav {
   height: fit-content;
-  padding-top: $space-l;
-  padding-bottom: $space-l;
+  padding-top: $space-s;
+  padding-bottom: $space-s;
   background-color: white;
 
   @media (max-width: 578px) {
@@ -62,6 +62,21 @@ nav {
         border: none;
         color: black;
       }
+    }
+  }
+
+  .collapse {
+    &:not(.show) {
+      display: none;
+    }
+  }
+
+  .navbar-nav {
+    gap: 1.125rem;
+
+    a {
+      color: $font-color-blue-dark;
+      font-size: $font-size-m;
     }
   }
 }

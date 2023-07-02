@@ -179,9 +179,6 @@
   color: #414142;
 }
 
-section {
-  margin: 120px 0;
-}
 section h2 {
   text-align: center;
   color: #1a2033;
@@ -195,14 +192,6 @@ section h2 {
   }
 }
 
-#introduction {
-  margin-top: 82px;
-}
-@media (min-width: 375px) {
-  #introduction {
-    margin-top: 4rem;
-  }
-}
 #introduction .intro {
   font-size: 1.125rem;
   color: #be3144;
@@ -351,8 +340,8 @@ section h2 {
 nav {
   height: -moz-fit-content;
   height: fit-content;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   background-color: white;
 }
 @media (max-width: 578px) {
@@ -362,11 +351,11 @@ nav {
   }
 }
 nav .logo {
-  height: 70px;
+  height: 55px;
 }
 @media (max-width: 992px) {
   nav .logo {
-    height: 55px;
+    height: 42px;
   }
 }
 nav .navigation-items ul {
@@ -399,6 +388,16 @@ nav .language-switch form select {
   background-color: transparent;
   border: none;
   color: black;
+}
+nav .collapse:not(.show) {
+  display: none;
+}
+nav .navbar-nav {
+  gap: 1.125rem;
+}
+nav .navbar-nav a {
+  color: #17171f;
+  font-size: 1.125rem;
 }
 
 footer {
@@ -502,6 +501,20 @@ html:has(#dataprotection-page) {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 992px) {
+  #dataprotection-page h1 {
+    font-size: 1.75rem;
+  }
+  #dataprotection-page h2 {
+    font-size: 1.5rem;
+  }
+  #dataprotection-page h3 {
+    font-size: 1.25rem;
+  }
+  #dataprotection-page h4 {
+    font-size: 1rem;
+  }
+}
 #dataprotection-page h2 {
   margin-bottom: 1rem;
   margin-top: 3rem;
@@ -536,8 +549,6 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: white;
 }
-@media (max-width: 992px) {
-  body {
-    margin-top: 8rem;
-  }
+body main {
+  margin-top: 8rem;
 }/*# sourceMappingURL=index.css.map */

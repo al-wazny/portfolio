@@ -8,7 +8,7 @@
     <meta name="description" content="An Agency Specialized in web development from Karlsruhe providing custom tailored software solutions">
     <meta name="keywords" content="karlsruhe, software, agency, agentur, websites, webseiten, website, automation, hosting, custom, software solutions, web entwicklung, web, dev, development, high-quality service, responsive support, personalized support, modern technologie">
     <meta name="author" content="Ali Al-Wazny">
-    <link rel="canonical" href="http://www.wishfulgoods.eu/index.php">
+    <!-- <link rel="canonical" href="http://www.wishfulgoods.eu/index.php"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -199,13 +199,7 @@
     </main>
 
     <?= footer($translation) ?>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.2.0/js/swiper.min.js"></script>
-
-    <script src="https://kit.fontawesome.com/6c8be80177.js" crossorigin="anonymous"></script>
-    <script src="./assets/js/app.js"></script>
     
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>

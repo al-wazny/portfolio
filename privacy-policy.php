@@ -8,7 +8,7 @@
     <meta name="description" content="An Agency Specialized in web development from Karlsruhe providing custom tailored software solutions">
     <meta name="keywords" content="karlsruhe, software, agency, agentur, websites, webseiten, website, automation, hosting, custom, software solutions, web entwicklung, web, dev, development, high-quality service, responsive support, personalized support, modern technologie">
     <meta name="author" content="Ali Al-Wazny">
-    <link rel="canonical" href="http://www.wishfulgoods.eu/index.php">
+    <!-- <link rel="canonical" href="http://www.wishfulgoods.eu/index.php"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
 </head>
 <body id="bootstrap-overrides">
     <?= navigation(); ?>
-    <main class="container d-flex my-5" id="dataprotection-page">
+    <main class="container d-flex" id="dataprotection-page">
         <div class="content">
             <h1>Datenschutzerklärung</h1>
             <p>Zuletzt aktualisiert:  24. Juni 2023.</p>
@@ -282,7 +282,7 @@
                 </p>
             </section>
         </div>
-        <aside class="position-relative">
+        <aside class="position-relative d-none d-md-block">
             <ul class="position-fixed">
                 <li><a href="#summary">Datenschutz auf einen Blick</a></li>
                 <li><a href="#hosting">Hosting</a></li>

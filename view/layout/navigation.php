@@ -3,7 +3,7 @@
     <nav class="w-100 fixed-top">
         <div class="container d-flex justify-content-between">
             <div class="my-auto">
-                <img class="logo" src="../../assets/img/Selection_002.png" alt="company logo">
+                <a href="/"><img class="logo" src="../../assets/img/Selection_002.png" alt="company logo"></a>
             </div>
             <div class="w-100 d-none d-lg-flex justify-content-end">
                 <div class="navigation-items mx-auto">
@@ -20,14 +20,21 @@
                                 <option value="de-DE">DE</option>
                                 <option <?= $isEnglish ? 'selected' : '' ?> value="en-GB">EN</option>
                             </select>
-                        </form>    
+                        </form>
                     </div>
                     <a class="btn btn-primary" href="mailto: support@wishfulgoods.eu">Get a Quote</a>
                 </div>
             </div>
-            <div class="d-flex d-lg-none align-items-center">
+            <div class="d-flex d-lg-none align-items-center"  data-toggle="collapse" data-target="#navbar-collapse">
                 <i class="fas fa-bars fa-xl"></i>
             </div>
+        </div>
+        <div class="container collapse navbar-collapse mt-3 pl-4" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/index.php">Home</a></li>
+                <li><a href="/imprint.php">Imprint</a></li>
+                <li><a href="/privacy-policy.php">Privacy Policy</a></li>
+            </ul>
         </div>
     </nav>
 <?php } ?>

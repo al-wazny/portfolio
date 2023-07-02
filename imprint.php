@@ -24,6 +24,10 @@
             margin-bottom: 2.5rem;
         }
 
+        h2 {
+            font-size: 1.25rem;
+        }
+
         .container p {
             margin-bottom: 2rem;
         }
@@ -55,7 +59,7 @@
             <h2>Redaktionell verantwortlich</h2>
             <p>Betreiber der Webseite: Ali Al-Wazny</p>
 
-            <h2>Verbraucherstreitbeilegung/Universalschlichtstelle</h2>
+            <h2>Verbraucherstreitbeilegung/ Universalschlichtstelle</h2>
             <p>
                 Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
                 Verbraucherschlichtungsstelle teilzunehmen.

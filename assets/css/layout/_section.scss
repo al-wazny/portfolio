@@ -2,13 +2,11 @@ $blur: 250px;
 $blured-circle-height: 267px;
 $btn-spacing-right: $base-space * 2.5;
 $stats-spacing: $base-space * 9;
-$introduction-spacing-top: 82px;
+// $introduction-spacing-top: 10rem;
 $illustration-small: 20rem;
 $illustration-medium: 25rem;
 
 section {
-  margin: 120px 0;
-
   h2 {
     text-align: center;
     color: $first-secondary-color;
@@ -23,12 +21,6 @@ section {
 }
 
 #introduction {
-  margin-top: $introduction-spacing-top;
-
-  @media (min-width: 375px) {
-    margin-top: $space-xxl;
-  }
-
   .intro {
     font-size: $font-size-m;
     color: $primary-color;
