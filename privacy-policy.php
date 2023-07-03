@@ -26,7 +26,7 @@
             <h1>Datenschutzerklärung</h1>
             <p>Zuletzt aktualisiert:  24. Juni 2023.</p>
            
-            <span class="mt-5 anchor" id="summary"></span>
+            <span class="anchor" id="summary"></span>
             <section class="summary">
                 <h2>1. Datenschutz auf einen Blick</h2>
                 <h3>Allgemeine Hinweise</h3>
