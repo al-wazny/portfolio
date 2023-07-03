@@ -18,7 +18,7 @@ const blub = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       var element = document.querySelector(
-        `aside a[href="#${entry.target.id}"]`
+        `aside a[href="#${entry.target.classList[0]}"]`
       );
       if (entry.isIntersecting) {
         element.classList.add("font-weight-bold");
@@ -79,7 +79,7 @@ jQuery(document).ready(function () {
         observer: true,
         observeParents: true,
         spaceBetween: swiperThis.data("space-between"),
-        // loop: swiperThis.data("loop"), 
+        // loop: swiperThis.data("loop"),
         clickable: swiperThis.data("click"),
         centeredSlides: swiperThis.data("center-slide"),
         freeMode: swiperThis.data("free-mode"),

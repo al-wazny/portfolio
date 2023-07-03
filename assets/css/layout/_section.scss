@@ -7,6 +7,10 @@ $illustration-small: 20rem;
 $illustration-medium: 25rem;
 
 section {
+  + section {
+    margin-top: 5rem;
+  }
+
   h2 {
     text-align: center;
     color: $first-secondary-color;

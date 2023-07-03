@@ -26,7 +26,8 @@
             <h1>Datenschutzerklärung</h1>
             <p>Zuletzt aktualisiert:  24. Juni 2023.</p>
            
-            <section class="mt-5" id="summary">
+            <span class="mt-5 anchor" id="summary"></span>
+            <section class="summary">
                 <h2>1. Datenschutz auf einen Blick</h2>
                 <h3>Allgemeine Hinweise</h3>
                 <p>
@@ -68,7 +69,8 @@
                     Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.
                 </p>
             </section>
-            <section id="hosting">
+            <span class="anchor" id="hosting"></span>
+            <section class="hosting">
                 <h2>2. Hosting</h2>
                 <p>Wir hosten die Inhalte unserer Website bei folgendem Anbieter:</p>
                 <h3>IONOS</h3>
@@ -85,7 +87,8 @@
                     umfasst. Die Einwilligung ist jederzeit widerrufbar.
                 </p>
             </section>
-            <section id="mandatory-information">
+            <span class="anchor" id="mandatory-information"></span>
+            <section class="mandatory-information">
                 <h2>3. Allgemeine Hinweise und Pflichtinformationen</h2>
                 <h3>Datenschutz</h3>
                 <p>
@@ -239,7 +242,8 @@
                     eines Mitgliedstaats verarbeitet werden.
                 </p>
             </section>
-            <section id="data-collecting">
+            <span class="anchor" id="data-collecting"></span>
+            <section class="data-collecting">
                 <h2>4. Datenerfassung auf dieser Website</h2>
                 <h3>Anfrage per E-Mail, Telefon oder Telefax</h3>
                 <p>
@@ -258,7 +262,8 @@
                     insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.
                 </p>
             </section>
-            <section id="plugin-and-tools">        
+            <span class="anchor" id="plugin-and-tools"></span>
+            <section class="plugin-and-tools">
                 <h2>5. Plugins und Tools</h2>
                 <h3>Font Awesome</h3>
                 <p>
