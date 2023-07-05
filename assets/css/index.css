@@ -392,8 +392,8 @@ nav .language-switch form select {
   border: none;
   color: black;
 }
-nav .collapse:not(.show) {
-  display: none;
+nav .collapse.in {
+  display: block;
 }
 nav .navbar-nav {
   gap: 1.125rem;

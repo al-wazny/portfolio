@@ -66,8 +66,8 @@ nav {
   }
 
   .collapse {
-    &:not(.show) {
-      display: none;
+    &.in {
+      display: block;
     }
   }
 
