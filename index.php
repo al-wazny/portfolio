@@ -1,6 +1,5 @@
 <?php require_once "./view/index.php"; ?>
 <!DOCTYPE html>
-blub
 <html lang="en">
 <head>
     <meta charset="UTF-8">
